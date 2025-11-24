@@ -4,18 +4,17 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, Shield } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-// Estilo PS5 = botões mais arredondados (rounded-2xl), bordas suaves, sensação "pill button"
-// Ajustei todos os botões e links que se comportam como botões
+// Azul petróleo mais claro estilo Apple
+const APPLE_BLUE = "#4F7A8A";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
+  // Detecta scroll para remover glow
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 40);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -37,40 +36,82 @@ const Header = () => {
     >
       <nav className="section-container py-5">
         <div className="flex items-center justify-between">
+          {/* LOGO */}
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="relative">
               <div className="absolute inset-0 bg-accent/20 rounded-xl blur-xl group-hover:bg-accent/30 transition-all" />
-              <Shield className="relative text-accent" size={32} strokeWidth={2.5} />
+              <Shield
+                className={`relative transition-all`}
+                size={32}
+                strokeWidth={2.5}
+                style={{
+                  color: isScrolled ? "var(--accent)" : APPLE_BLUE,
+                  filter: isScrolled
+                    ? "none"
+                    : "drop-shadow(0 0 6px rgba(79, 122, 138, 0.7))",
+                }}
+              />
             </div>
-            <span className="text-2xl font-bold text-primary font-display tracking-tight">
+
+            <span
+              className="text-2xl font-bold font-display tracking-tight transition-all"
+              style={{
+                color: isScrolled ? "var(--primary)" : APPLE_BLUE,
+                textShadow: isScrolled
+                  ? "none"
+                  : "0 0 8px rgba(79,122,138,0.6)",
+              }}
+            >
               WAGR
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* DESKTOP NAV */}
           <div className="hidden lg:flex items-center space-x-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                className={`px-4 py-2 text-sm font-medium rounded-2xl transition-all ${
-                  location.pathname === link.href
-                    ? "text-accent bg-accent/10 shadow-sm"
-                    : "text-foreground hover:text-accent hover:bg-accent/5"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = location.pathname === link.href;
+
+              return (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className="px-4 py-2 text-sm font-medium rounded-2xl transition-all"
+                  style={{
+                    color: isActive
+                      ? APPLE_BLUE
+                      : isScrolled
+                      ? "var(--foreground)"
+                      : APPLE_BLUE,
+                    background: isActive
+                      ? "rgba(79,122,138,0.15)"
+                      : "transparent",
+                    boxShadow: isActive
+                      ? "0 0 10px rgba(79,122,138,0.4)"
+                      : "none",
+                    textShadow: isScrolled
+                      ? "none"
+                      : "0 0 6px rgba(79,122,138,0.8)",
+                  }}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </div>
 
-          {/* Desktop Buttons */}
+          {/* DESKTOP BUTTONS */}
           <div className="hidden lg:flex items-center space-x-3">
             <Button
               variant="ghost"
               size="sm"
               asChild
-              className="font-medium rounded-2xl hover:bg-accent/10"
+              className="font-medium rounded-2xl"
+              style={{
+                color: isScrolled ? "var(--foreground)" : APPLE_BLUE,
+                textShadow: isScrolled
+                  ? "none"
+                  : "0 0 6px rgba(79,122,138,0.7)",
+              }}
             >
               <Link to="/contato">Falar com Jurídico</Link>
             </Button>
@@ -78,23 +119,34 @@ const Header = () => {
             <Button
               size="sm"
               asChild
-              className="rounded-2xl bg-gradient-to-r from-accent to-accent/90 hover:shadow-xl hover:shadow-accent/30 transition-shadow font-medium"
+              className="rounded-2xl transition-shadow font-medium"
+              style={{
+                background: `linear-gradient(90deg, ${APPLE_BLUE}, ${APPLE_BLUE}CC)`,
+                color: "white",
+                boxShadow: isScrolled
+                  ? "0 0 0 transparent"
+                  : "0 0 18px rgba(79,122,138,0.55)",
+              }}
             >
               <Link to="/contato">Registrar Marca</Link>
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* MOBILE MENU BUTTON */}
           <button
-            className="lg:hidden text-foreground hover:text-accent transition-colors"
+            className="lg:hidden transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+            {isMobileMenuOpen ? (
+              <X size={28} color={APPLE_BLUE} />
+            ) : (
+              <Menu size={28} color={isScrolled ? "var(--foreground)" : APPLE_BLUE} />
+            )}
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* MOBILE NAVIGATION */}
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
@@ -108,11 +160,18 @@ const Header = () => {
                   <Link
                     key={link.href}
                     to={link.href}
-                    className={`px-4 py-3 text-base font-medium rounded-2xl transition-all ${
-                      location.pathname === link.href
-                        ? "text-accent bg-accent/10 shadow-sm"
-                        : "text-foreground hover:bg-muted"
-                    }`}
+                    className="px-4 py-3 text-base font-medium rounded-2xl transition-all"
+                    style={{
+                      color: APPLE_BLUE,
+                      background:
+                        location.pathname === link.href
+                          ? "rgba(79,122,138,0.15)"
+                          : "transparent",
+                      boxShadow:
+                        location.pathname === link.href
+                          ? "0 0 10px rgba(79,122,138,0.4)"
+                          : "none",
+                    }}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {link.label}
@@ -125,6 +184,7 @@ const Header = () => {
                     size="sm"
                     asChild
                     className="rounded-2xl"
+                    style={{ color: APPLE_BLUE }}
                   >
                     <Link to="/contato">Falar com Jurídico</Link>
                   </Button>
@@ -132,7 +192,11 @@ const Header = () => {
                   <Button
                     size="sm"
                     asChild
-                    className="rounded-2xl bg-gradient-to-r from-accent to-accent/90"
+                    className="rounded-2xl"
+                    style={{
+                      background: `linear-gradient(90deg, ${APPLE_BLUE}, ${APPLE_BLUE}CC)`,
+                      color: "white",
+                    }}
                   >
                     <Link to="/contato">Registrar Marca</Link>
                   </Button>
