@@ -174,7 +174,7 @@ const Index = () => {
       <Button
         size="lg"
         variant="outline"
-        className="bg-orange-500 text-white hover:bg-orange-600 font-medium text-lg px-8 py-6 rounded-2xl transition-all"
+        className="border-white/20 text-white hover:bg-white/10 backdrop-blur-sm font-medium text-lg px-8 py-5 rounded-xl"
         asChild
       >
         <Link to="/contato">Falar com o Jurídico</Link>
@@ -186,7 +186,7 @@ const Index = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.7, delay: 0.35 }}
-      className="mt-8 flex flex-wrap justify-center gap-4 text-white/70 text-sm"
+      className="mt-14 flex flex-wrap justify-center gap-6 text-white/70 text-sm"
     >
       <div className="flex items-center gap-2">
         <CheckCircle2 className="w-5 h-5 text-accent" />
@@ -203,6 +203,7 @@ const Index = () => {
     </motion.div>
   </div>
 </section>
+
 
       {/* Sobre a WAGR */}
       <section className="py-32 bg-gradient-to-b from-background to-muted/30">
