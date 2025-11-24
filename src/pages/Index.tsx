@@ -105,97 +105,105 @@ const Index = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Animated Background */}
-        <div className="absolute inset-0">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${heroImage})` }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-primary/90" />
-          <div className="absolute inset-0">
-            <div className="absolute top-20 left-20 w-72 h-72 bg-accent/20 rounded-full blur-3xl animate-pulse" />
-            <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse delay-700" />
-          </div>
-        </div>
-        
-        <div className="relative z-10 section-container text-center pt-32 pb-20">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-            className="inline-block mb-6 px-6 py-2 rounded-full bg-accent/10 border border-accent/20 backdrop-blur-sm"
-          >
-            <span className="text-accent font-semibold text-sm tracking-wide">
-              TECNOLOGIA • DIREITO • ESTRATÉGIA
-            </span>
-          </motion.div>
-          
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-display font-bold mb-8 text-white max-w-5xl mx-auto"
-          >
-            Protegemos ideias.
-            <br />
-            <span className="gradient-text">Blindamos marcas.</span>
-          </motion.h1>
-          
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl mb-12 text-white/80 max-w-3xl mx-auto leading-relaxed"
-          >
-            Registro, monitoramento e defesa jurídica com precisão, tecnologia e excelência.
-          </motion.p>
-          
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
-          >
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-accent to-accent/90 hover:shadow-glow text-white text-lg px-8 py-6 rounded-xl font-semibold"
-              asChild
-            >
-              <Link to="/contato">Registrar minha marca</Link>
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-2 border-white/20 text-white hover:bg-white/10 backdrop-blur-sm text-lg px-8 py-6 rounded-xl font-semibold"
-              asChild
-            >
-              <Link to="/contato">Falar com o Jurídico</Link>
-            </Button>
-          </motion.div>
-          
-          {/* Trust Indicators */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.8 }}
-            className="mt-16 flex flex-wrap justify-center gap-8 text-white/70 text-sm"
-          >
-            <div className="flex items-center gap-2">
-              <CheckCircle2 size={20} className="text-accent" />
-              <span>+1000 marcas protegidas</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 size={20} className="text-accent" />
-              <span>Resposta em 24h</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 size={20} className="text-accent" />
-              <span>Monitoramento contínuo</span>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+ <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+  {/* Background minimalista Apple-style */}
+  <div className="absolute inset-0">
+    <img
+      src={heroImage}
+      alt=""
+      className="w-full h-full object-cover opacity-40"
+    />
+    <div className="absolute inset-0 bg-black/60 backdrop-blur-2xl" />
+  </div>
+
+  <div className="relative z-10 section-container text-center pt-32 pb-20 font-inter">
+    {/* Tag acima do título */}
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="inline-block mb-8 px-6 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md"
+    >
+      <span className="text-white/80 tracking-wide text-sm font-medium">
+        Propriedade Intelectual
+      </span>
+    </motion.div>
+
+    {/* Título Apple-style */}
+    <motion.h1
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
+      className="text-white font-semibold mb-10 max-w-4xl mx-auto 
+                 text-5xl md:text-7xl leading-[1.07] tracking-tight"
+    >
+      Protegemos ideias.
+      <br />
+      <span className="bg-gradient-to-r from-white to-white/60 bg-clip-text text-transparent">
+        Blindamos marcas.
+      </span>
+    </motion.h1>
+
+    {/* Subtitulo Apple-like */}
+    <motion.p
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, delay: 0.15 }}
+      className="text-white/70 text-xl md:text-2xl max-w-2xl mx-auto 
+                 leading-relaxed tracking-tight"
+    >
+      Registro, monitoramento e defesa jurídica com precisão, tecnologia e excelência.
+    </motion.p>
+
+    {/* Botões minimalistas */}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, delay: 0.3 }}
+      className="flex flex-col sm:flex-row gap-4 justify-center mt-12"
+    >
+      <Button
+        size="lg"
+        className="bg-white text-black hover:bg-white/90 
+                   font-medium text-lg px-8 py-6 rounded-2xl transition-all"
+        asChild
+      >
+        <Link to="/contato">Registrar minha marca</Link>
+      </Button>
+
+      <Button
+        size="lg"
+        variant="outline"
+        className="border-white/20 text-white hover:bg-white/10 
+                   backdrop-blur-sm font-medium text-lg px-8 py-6 rounded-2xl"
+        asChild
+      >
+        <Link to="/contato">Falar com o Jurídico</Link>
+      </Button>
+    </motion.div>
+
+    {/* Trust Indicators estilo Apple */}
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8, delay: 0.5 }}
+      className="mt-20 flex flex-wrap justify-center gap-10 text-white/60 text-base"
+    >
+      <div className="flex items-center gap-2">
+        <CheckCircle2 className="w-5 h-5 text-white/70" />
+        <span>+1000 marcas protegidas</span>
+      </div>
+      <div className="flex items-center gap-2">
+        <CheckCircle2 className="w-5 h-5 text-white/70" />
+        <span>Resposta em 24h</span>
+      </div>
+      <div className="flex items-center gap-2">
+        <CheckCircle2 className="w-5 h-5 text-white/70" />
+        <span>Monitoramento contínuo</span>
+      </div>
+    </motion.div>
+  </div>
+</section>
 
       {/* Sobre a WAGR */}
       <section className="py-32 bg-gradient-to-b from-background to-muted/30">
