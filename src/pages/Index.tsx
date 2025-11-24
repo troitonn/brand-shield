@@ -192,7 +192,7 @@ const Index = () => {
     >
       <div className="flex items-center gap-2">
         <CheckCircle2 className="w-5 h-5 text-white/70" />
-        <span>+1000 marcas protegidas</span>
+        <span>+1000 negócios fortalecidos</span>
       </div>
       <div className="flex items-center gap-2">
         <CheckCircle2 className="w-5 h-5 text-white/70" />
