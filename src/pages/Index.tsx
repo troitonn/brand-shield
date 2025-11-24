@@ -13,8 +13,8 @@ import {
   TrendingUp,
   Users,
 } from "lucide-react";
-import heroImage from "@/assets/hero-sunrise.jpg";
-import manifestoImage from "@/assets/manifesto-forest.jpg";
+import heroImage from "@/assets/hero-abstract.jpg";
+import manifestoImage from "@/assets/manifesto-tech.jpg";
 import {
   Accordion,
   AccordionContent,
@@ -105,81 +105,140 @@ const Index = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-b from-foreground/60 via-foreground/40 to-background" />
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Animated Background */}
+        <div className="absolute inset-0">
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${heroImage})` }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-primary/90" />
+          <div className="absolute inset-0">
+            <div className="absolute top-20 left-20 w-72 h-72 bg-accent/20 rounded-full blur-3xl animate-pulse" />
+            <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse delay-700" />
+          </div>
         </div>
         
-        <div className="relative z-10 section-container text-center text-white">
+        <div className="relative z-10 section-container text-center pt-32 pb-20">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            className="inline-block mb-6 px-6 py-2 rounded-full bg-accent/10 border border-accent/20 backdrop-blur-sm"
+          >
+            <span className="text-accent font-semibold text-sm tracking-wide">
+              TECNOLOGIA • DIREITO • ESTRATÉGIA
+            </span>
+          </motion.div>
+          
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-5xl md:text-7xl font-bold mb-6 text-balance"
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="font-display font-bold mb-8 text-white max-w-5xl mx-auto"
           >
-            Protegemos ideias.<br />Blindamos marcas.
+            Protegemos ideias.
+            <br />
+            <span className="gradient-text">Blindamos marcas.</span>
           </motion.h1>
+          
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl md:text-2xl mb-8 text-white/90"
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-xl md:text-2xl mb-12 text-white/80 max-w-3xl mx-auto leading-relaxed"
           >
-            Registro, monitoramento e defesa jurídica com precisão e tecnologia.
+            Registro, monitoramento e defesa jurídica com precisão, tecnologia e excelência.
           </motion.p>
+          
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-accent to-accent/90 hover:shadow-glow text-white text-lg px-8 py-6 rounded-xl font-semibold"
+              asChild
+            >
               <Link to="/contato">Registrar minha marca</Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-foreground" asChild>
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-2 border-white/20 text-white hover:bg-white/10 backdrop-blur-sm text-lg px-8 py-6 rounded-xl font-semibold"
+              asChild
+            >
               <Link to="/contato">Falar com o Jurídico</Link>
             </Button>
+          </motion.div>
+          
+          {/* Trust Indicators */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.8 }}
+            className="mt-16 flex flex-wrap justify-center gap-8 text-white/70 text-sm"
+          >
+            <div className="flex items-center gap-2">
+              <CheckCircle2 size={20} className="text-accent" />
+              <span>+1000 marcas protegidas</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <CheckCircle2 size={20} className="text-accent" />
+              <span>Resposta em 24h</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <CheckCircle2 size={20} className="text-accent" />
+              <span>Monitoramento contínuo</span>
+            </div>
           </motion.div>
         </div>
       </section>
 
       {/* Sobre a WAGR */}
-      <section className="py-20 bg-background">
+      <section className="py-32 bg-gradient-to-b from-background to-muted/30">
         <div className="section-container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="max-w-3xl mx-auto text-center"
+            className="max-w-4xl mx-auto text-center"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-              A união entre tech e direito.
+            <div className="inline-block mb-6 px-4 py-1 rounded-full bg-accent/10 border border-accent/20">
+              <span className="text-accent font-semibold text-sm">SOBRE A WAGR</span>
+            </div>
+            <h2 className="font-display mb-8">
+              A união entre <span className="gradient-text">tech e direito</span>
             </h2>
-            <p className="text-lg text-foreground leading-relaxed">
-              A WAGR une tecnologia, advocacia especializada e estratégia de marca. 
-              Protegemos negócios do início ao fim — do nome ao crescimento.
+            <p className="text-xl text-muted-foreground leading-relaxed">
+              A WAGR une tecnologia de ponta, advocacia especializada e estratégia de marca. 
+              Protegemos negócios do início ao fim — do nome ao crescimento exponencial.
             </p>
           </motion.div>
         </div>
       </section>
 
       {/* Jurídico */}
-      <section className="py-20 bg-brand-ice">
+      <section className="py-32 bg-muted/50">
         <div className="section-container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="max-w-4xl mx-auto"
+            className="max-w-5xl mx-auto"
           >
-            <h2 className="text-4xl font-bold mb-8 text-center">
-              Atuação jurídica especializada em Propriedade Intelectual.
-            </h2>
+            <div className="text-center mb-12">
+              <div className="inline-block mb-6 px-4 py-1 rounded-full bg-primary/10 border border-primary/20">
+                <span className="text-primary font-semibold text-sm">JURÍDICO ESPECIALIZADO</span>
+              </div>
+              <h2 className="font-display mb-4">
+                Atuação jurídica especializada em <span className="gradient-text">Propriedade Intelectual</span>
+              </h2>
+            </div>
             <div className="grid md:grid-cols-2 gap-4">
               {[
                 "Registro no INPI",
@@ -208,16 +267,20 @@ const Index = () => {
       </section>
 
       {/* Serviços */}
-      <section className="py-20 bg-background">
-        <div className="section-container">
+      <section className="py-32 bg-background relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--accent)/0.05),transparent_50%)]" />
+        <div className="section-container relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold mb-4">Nossos Serviços.</h2>
+            <div className="inline-block mb-6 px-4 py-1 rounded-full bg-accent/10 border border-accent/20">
+              <span className="text-accent font-semibold text-sm">NOSSOS SERVIÇOS</span>
+            </div>
+            <h2 className="font-display">Proteção <span className="gradient-text">completa</span> para sua marca</h2>
           </motion.div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {services.map((service, index) => (
@@ -392,46 +455,76 @@ const Index = () => {
       </section>
 
       {/* Manifesto */}
-      <section className="relative py-32 overflow-hidden">
+      <section className="relative py-40 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${manifestoImage})` }}
-        >
-          <div className="absolute inset-0 bg-foreground/70" />
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-primary/95" />
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
         </div>
+        
         <div className="relative z-10 section-container text-center">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-2xl md:text-3xl text-white leading-relaxed max-w-4xl mx-auto"
+            className="max-w-5xl mx-auto"
           >
-            Marcas nascem de histórias. Nós garantimos que elas cresçam protegidas.<br />
-            <span className="font-bold">Tecnologia + Direito + Estratégia.</span><br />
-            Somos WAGR.
-          </motion.p>
+            <p className="text-3xl md:text-4xl text-white/90 leading-relaxed mb-8 font-display">
+              Marcas nascem de histórias.
+            </p>
+            <p className="text-3xl md:text-4xl text-white leading-relaxed mb-8 font-display">
+              Nós garantimos que elas cresçam <span className="text-accent">protegidas</span>.
+            </p>
+            <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
+              <span className="text-white font-bold text-lg">Tecnologia</span>
+              <span className="text-accent">•</span>
+              <span className="text-white font-bold text-lg">Direito</span>
+              <span className="text-accent">•</span>
+              <span className="text-white font-bold text-lg">Estratégia</span>
+            </div>
+          </motion.div>
         </div>
       </section>
 
       {/* CTA Final */}
-      <section className="py-20 bg-background">
-        <div className="section-container">
+      <section className="py-32 bg-gradient-to-b from-background to-muted/30 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/5 rounded-full blur-3xl" />
+        </div>
+        
+        <div className="section-container relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-center max-w-3xl mx-auto"
+            className="text-center max-w-4xl mx-auto"
           >
-            <h2 className="text-4xl font-bold mb-8">
-              Sua marca merece proteção real.
+            <h2 className="font-display mb-6">
+              Sua marca merece <span className="gradient-text">proteção real</span>
             </h2>
+            <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
+              Fale com nossa equipe especializada e descubra como blindar seu negócio com tecnologia e direito.
+            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-accent hover:bg-accent/90" asChild>
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-accent to-accent/90 hover:shadow-glow text-white text-lg px-8 py-6 rounded-xl font-semibold"
+                asChild
+              >
                 <Link to="/contato">Registrar agora</Link>
               </Button>
-              <Button size="lg" variant="outline" asChild>
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-2 text-lg px-8 py-6 rounded-xl font-semibold hover:bg-muted"
+                asChild
+              >
                 <Link to="/contato">Falar com o Jurídico</Link>
               </Button>
             </div>
