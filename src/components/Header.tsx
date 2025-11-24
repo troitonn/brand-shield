@@ -49,7 +49,7 @@ const Header = () => {
                 style={{
                   color: isHero ? APPLE_BLUE : "var(--accent)",
                   filter: isHero
-                    ? "drop-shadow(0 0 6px rgba(79,122,138,0.7))"
+                    ? "drop-shadow(0 0 3px rgba(79,122,138,0.25))"
                     : "none",
                 }}
               />
@@ -59,8 +59,7 @@ const Header = () => {
               className="text-2xl font-bold font-display tracking-tight transition-all"
               style={{
                 color: isHero ? APPLE_BLUE : "var(--primary)",
-                textShadow: isHero
-                  ? "0 0 8px rgba(79,122,138,0.6)"
+                textShadow: isHero ? "0 0 4px rgba(79,122,138,0.25)"
                   : "none",
               }}
             >
@@ -82,11 +81,9 @@ const Header = () => {
                     background: isActive
                       ? "rgba(79,122,138,0.15)"
                       : "transparent",
-                    boxShadow: isActive && isHero
-                      ? "0 0 10px rgba(79,122,138,0.4)"
+                    boxShadow: isActive && isHero ? "0 0 6px rgba(79,122,138,0.2)"
                       : "none",
-                    textShadow: isHero
-                      ? "0 0 6px rgba(79,122,138,0.8)"
+                    textShadow: isHero ? "0 0 3px rgba(79,122,138,0.25)"
                       : "none",
                   }}
                 >
@@ -106,8 +103,7 @@ const Header = () => {
               className="font-medium rounded-2xl"
               style={{
                 color: isHero ? APPLE_BLUE : "var(--accent)",
-                textShadow: isHero
-                  ? "0 0 6px rgba(79,122,138,0.7)"
+                textShadow: isHero ? "0 0 3px rgba(79,122,138,0.25)"
                   : "none",
               }}
             >
