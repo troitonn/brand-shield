@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import { Calendar } from "lucide-react";
 
@@ -67,10 +65,7 @@ const Blog = () => {
       : articles.filter((article) => article.category === selectedCategory);
 
   return (
-    <div className="min-h-screen">
-      <Header />
-      
-      <section className="pt-32 pb-20 bg-gradient-to-b from-brand-ice to-background">
+    <section className="pt-32 pb-20 bg-gradient-to-b from-brand-ice to-background">
         <div className="section-container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -140,9 +135,6 @@ const Blog = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
   );
 };
 

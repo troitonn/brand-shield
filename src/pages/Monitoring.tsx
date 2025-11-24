@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { Eye, Globe, Share2, Search, AlertCircle, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -40,10 +38,7 @@ const Monitoring = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Header />
-      
-      <section className="pt-32 pb-20 bg-gradient-to-b from-brand-ice to-background">
+    <section className="pt-32 pb-20 bg-gradient-to-b from-brand-ice to-background">
         <div className="section-container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -133,9 +128,6 @@ const Monitoring = () => {
           </motion.div>
         </div>
       </section>
-
-      <Footer />
-    </div>
   );
 };
 
