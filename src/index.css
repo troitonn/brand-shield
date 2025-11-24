@@ -8,77 +8,84 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* WAGR Brand Colors */
+    /* WAGR Professional Design System */
     --background: 0 0% 100%;
-    --foreground: 0 0% 4%;
+    --foreground: 222 47% 11%;
     
-    --brand-orange: 22 100% 57%;
-    --brand-orange-foreground: 0 0% 100%;
+    /* Primary: Deep Navy Blue - Confiança e profissionalismo */
+    --primary: 222 47% 11%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 222 30% 25%;
     
-    --brand-blue: 198 79% 22%;
-    --brand-blue-foreground: 0 0% 100%;
+    /* Accent: Electric Orange - Energia e inovação */
+    --accent: 24 100% 58%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 24 100% 95%;
     
-    --brand-ice: 220 33% 98%;
-    --brand-ice-foreground: 0 0% 4%;
+    /* Secondary: Sophisticated Blue */
+    --secondary: 214 100% 97%;
+    --secondary-foreground: 222 47% 11%;
     
-    --brand-gray: 220 10% 57%;
+    /* Neutrals - Sistema refinado */
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
     
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 4%;
-
+    --card-foreground: 222 47% 11%;
+    
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 4%;
-
-    --primary: 198 79% 22%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 220 33% 98%;
-    --secondary-foreground: 0 0% 4%;
-
-    --muted: 220 33% 98%;
-    --muted-foreground: 220 10% 57%;
-
-    --accent: 22 100% 57%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 198 79% 22%;
+    --ring: 24 100% 58%;
 
-    --radius: 0.75rem;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --radius: 1rem;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(222 47% 11%) 0%, hsl(222 30% 25%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(24 100% 58%) 0%, hsl(24 100% 68%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(214 100% 97%) 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    --shadow-accent: 0 10px 30px -5px hsl(24 100% 58% / 0.3);
   }
 
   .dark {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 100%;
+    --background: 222 47% 11%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 100%;
+    --card: 222 40% 15%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 222 40% 15%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 22 100% 57%;
-    --primary-foreground: 0 0% 4%;
+    --primary: 24 100% 58%;
+    --primary-foreground: 222 47% 11%;
 
-    --secondary: 198 79% 22%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 222 30% 20%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 220 10% 57%;
+    --muted: 222 30% 20%;
+    --muted-foreground: 220 9% 65%;
 
-    --accent: 22 100% 57%;
-    --accent-foreground: 0 0% 4%;
+    --accent: 24 100% 58%;
+    --accent-foreground: 222 47% 11%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 22 100% 57%;
+    --border: 222 30% 20%;
+    --input: 222 30% 20%;
+    --ring: 24 100% 58%;
+    
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
   }
 }
 
@@ -88,11 +95,24 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold tracking-tight;
+    @apply tracking-tight;
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    font-weight: 700;
+  }
+  
+  h1 {
+    @apply text-5xl md:text-6xl lg:text-7xl;
+    letter-spacing: -0.02em;
+  }
+  
+  h2 {
+    @apply text-4xl md:text-5xl;
+    letter-spacing: -0.02em;
   }
 }
 
@@ -101,11 +121,21 @@ All colors MUST be HSL.
     text-wrap: balance;
   }
   
-  .gradient-overlay {
-    @apply relative before:absolute before:inset-0 before:bg-gradient-to-b before:from-transparent before:via-transparent before:to-background/80;
+  .section-container {
+    @apply max-w-7xl mx-auto px-6 sm:px-8 lg:px-12;
   }
   
-  .section-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-accent);
+  }
+  
+  .glass-effect {
+    @apply backdrop-blur-xl bg-white/70 dark:bg-gray-900/70;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  
+  .shadow-glow {
+    box-shadow: 0 0 40px -10px hsl(var(--accent) / 0.5);
   }
 }

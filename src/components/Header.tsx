@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Shield } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
@@ -29,25 +29,31 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/95 backdrop-blur-md shadow-lg" : "bg-transparent"
+        isScrolled ? "glass-effect shadow-lg" : "bg-transparent"
       }`}
     >
-      <nav className="section-container py-4">
+      <nav className="section-container py-5">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-primary">WAGR</span>
+          <Link to="/" className="flex items-center space-x-3 group">
+            <div className="relative">
+              <div className="absolute inset-0 bg-accent/20 rounded-lg blur-xl group-hover:bg-accent/30 transition-all" />
+              <Shield className="relative text-accent" size={32} strokeWidth={2.5} />
+            </div>
+            <span className="text-2xl font-bold text-primary font-display tracking-tight">
+              WAGR
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 to={link.href}
-                className={`text-sm font-medium transition-colors hover:text-accent ${
+                className={`px-4 py-2 text-sm font-medium rounded-lg transition-all ${
                   location.pathname === link.href
-                    ? "text-accent"
-                    : "text-foreground"
+                    ? "text-accent bg-accent/10"
+                    : "text-foreground hover:text-accent hover:bg-accent/5"
                 }`}
               >
                 {link.label}
@@ -55,22 +61,26 @@ const Header = () => {
             ))}
           </div>
 
-          <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" size="sm" asChild>
-              <Link to="/contato">Falar com o Jurídico</Link>
+          <div className="hidden lg:flex items-center space-x-3">
+            <Button variant="ghost" size="sm" asChild className="font-medium">
+              <Link to="/contato">Falar com Jurídico</Link>
             </Button>
-            <Button size="sm" asChild className="bg-accent hover:bg-accent/90">
+            <Button 
+              size="sm" 
+              asChild 
+              className="bg-gradient-to-r from-accent to-accent/90 hover:shadow-glow font-medium"
+            >
               <Link to="/contato">Registrar Marca</Link>
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground"
+            className="lg:hidden text-foreground hover:text-accent transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
 
@@ -81,28 +91,28 @@ const Header = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden mt-4 pb-4"
+              className="lg:hidden mt-6 pb-6"
             >
-              <div className="flex flex-col space-y-4">
+              <div className="flex flex-col space-y-3">
                 {navLinks.map((link) => (
                   <Link
                     key={link.href}
                     to={link.href}
-                    className={`text-sm font-medium transition-colors ${
+                    className={`px-4 py-3 text-base font-medium rounded-lg transition-all ${
                       location.pathname === link.href
-                        ? "text-accent"
-                        : "text-foreground"
+                        ? "text-accent bg-accent/10"
+                        : "text-foreground hover:bg-muted"
                     }`}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {link.label}
                   </Link>
                 ))}
-                <div className="flex flex-col space-y-2 pt-4">
+                <div className="flex flex-col space-y-2 pt-4 border-t border-border">
                   <Button variant="outline" size="sm" asChild>
-                    <Link to="/contato">Falar com o Jurídico</Link>
+                    <Link to="/contato">Falar com Jurídico</Link>
                   </Button>
-                  <Button size="sm" asChild className="bg-accent hover:bg-accent/90">
+                  <Button size="sm" asChild className="bg-gradient-to-r from-accent to-accent/90">
                     <Link to="/contato">Registrar Marca</Link>
                   </Button>
                 </div>
