@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, Shield } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const APPLE_BLUE = "#4F7A8A"; // Azul petróleo claro estilo Apple
+const APPLE_BLUE = "#FE721B"; // Azul petróleo claro estilo Apple
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
