@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { Linkedin } from "lucide-react";
 
 const About = () => {
@@ -26,10 +24,7 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Header />
-      
-      <section className="pt-32 pb-20 bg-gradient-to-b from-brand-ice to-background">
+    <section className="pt-32 pb-20 bg-gradient-to-b from-brand-ice to-background">
         <div className="section-container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -138,9 +133,6 @@ const About = () => {
           </motion.div>
         </div>
       </section>
-
-      <Footer />
-    </div>
   );
 };
 

@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import ServiceCard from "@/components/ServiceCard";
 import {
   Shield,
@@ -105,9 +103,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Header />
-
+    <>
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div
@@ -442,9 +438,7 @@ const Index = () => {
           </motion.div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </>
   );
 };
 
