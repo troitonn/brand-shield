@@ -105,7 +105,7 @@ const Index = () => {
   return (
     <>
       {/* Hero Section */}
-      {/* Hero Section */}
+          {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
   {/* Background com menos blur e mantendo cores */}
   <div className="absolute inset-0">
@@ -122,14 +122,27 @@ const Index = () => {
   <div className="relative z-10 section-container text-center pt-28 pb-16 font-inter">
     {/* Tag acima do título com menos espaçamento */}
     <motion.div
-      initial={{ opacity: 0, y: 10 }}
+      initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="inline-block mb-5 px-5 py-1.5 rounded-full bg-white/10 border border-white/10 backdrop-blur-sm"
+      transition={{ duration: 0.6, delay: 0.2 }}
+      className="flex flex-col sm:flex-row gap-4 justify-center"
     >
-      <span className="text-white/90 tracking-wide text-sm font-medium">
-        Propriedade Intelectual
-      </span>
+      <Button
+        size="lg"
+        className="bg-white text-black hover:bg-white/90 font-medium text-lg px-8 py-6 rounded-2xl transition-all"
+        asChild
+      >
+        <Link to="/contato">Registrar minha marca</Link>
+      </Button>
+
+      <Button
+        size="lg"
+        variant="outline"
+        className="border-white/20 text-orange-400 hover:bg-white/10 backdrop-blur-sm font-medium text-lg px-8 py-6 rounded-2xl"
+        asChild
+      >
+        <Link to="/contato">Falar com o Jurídico</Link>
+      </Button>
     </motion.div>
 
     {/* Título mais compacto e mantendo cor de destaque */}
@@ -165,17 +178,17 @@ const Index = () => {
     >
       <Button
         size="lg"
-        className="bg-accent hover:bg-accent/90 text-white font-medium text-lg px-8 py-5 rounded-xl transition-all"
+        variant="outline"
+        className="border-white/20 text-orange-400 hover:bg-white/10 backdrop-blur-sm font-medium text-lg px-8 py-6 rounded-2xl"
         asChild
       >
-        <Link to="/contato">Registrar minha marca</Link>
+        <Link to="/contato">Falar com o Jurídico</Link>
       </Button>
 
       <Button
         size="lg"
         variant="outline"
-        className="border-white/20 text-orange-400 hover:bg-white/10 
-                   backdrop-blur-sm font-medium text-lg px-8 py-6 rounded-2xl"
+        className="bg-orange-500 text-white hover:bg-orange-600 font-medium text-lg px-8 py-6 rounded-2xl transition-all"
         asChild
       >
         <Link to="/contato">Falar com o Jurídico</Link>
@@ -187,7 +200,7 @@ const Index = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.7, delay: 0.35 }}
-      className="mt-14 flex flex-wrap justify-center gap-6 text-white/70 text-sm"
+      className="mt-8 flex flex-wrap justify-center gap-4 text-white/70 text-sm"
     >
       <div className="flex items-center gap-2">
         <CheckCircle2 className="w-5 h-5 text-accent" />
@@ -204,8 +217,6 @@ const Index = () => {
     </motion.div>
   </div>
 </section>
-
-
       {/* Sobre a WAGR */}
       <section className="py-32 bg-gradient-to-b from-background to-muted/30">
         <div className="section-container">
