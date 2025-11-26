@@ -26,30 +26,29 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const payload = {
+    const form = {
       name: formData.name,
       email: formData.email,
       phone: formData.phone,
       service: formData.service,
       message: formData.message,
+
+      // configs FormSubmit
       _captcha: "false",
+      _bcc: "alexsandro.braga@troiton.com.br, gustavoroccocorrea@hotmail.com, raffaellabernardino@gmail.com",
     };
 
-    try {
-      await fetch("https://formsubmit.co/SEU_EMAIL_AQUI", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(payload),
-      });
+    await fetch("https://formsubmit.co/SEU_EMAIL_AQUI", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(form),
+    });
 
-      toast.success("Mensagem enviada com sucesso!");
-      setFormData({ name: "", email: "", phone: "", service: "", message: "" });
-    } catch {
-      toast.error("Ocorreu um erro. Tente novamente.");
-    }
+    toast.success("Mensagem enviada com sucesso!");
+    setFormData({ name: "", email: "", phone: "", service: "", message: "" });
   };
 
   const handleChange = (
@@ -81,10 +80,8 @@ const Contact = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <form
-              onSubmit={handleSubmit}
-              className="space-y-6 bg-card p-8 rounded-xl border border-border"
-            >
+            <form onSubmit={handleSubmit} className="space-y-6 bg-card p-8 rounded-xl border border-border">
+              
               <div>
                 <Label htmlFor="name">Nome Completo</Label>
                 <Input
@@ -127,7 +124,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <Label>Tipo de Serviço</Label>
+                <Label htmlFor="service">Tipo de Serviço</Label>
                 <Select
                   value={formData.service}
                   onValueChange={(value) =>
@@ -170,6 +167,7 @@ const Contact = () => {
             </form>
           </motion.div>
 
+          {/* Lado direito permanece igual */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -179,33 +177,21 @@ const Contact = () => {
             <div>
               <h2 className="text-3xl font-bold mb-6">Links Diretos</h2>
               <div className="space-y-4">
-                <Button
-                  size="lg"
-                  className="w-full bg-accent hover:bg-accent/90 justify-start"
-                  asChild
-                >
+                <Button size="lg" className="w-full bg-accent hover:bg-accent/90 justify-start" asChild>
                   <a href="#registro">
                     <MessageCircle className="mr-2" size={20} />
                     Registrar Minha Marca
                   </a>
                 </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="w-full justify-start"
-                  asChild
-                >
+
+                <Button size="lg" variant="outline" className="w-full justify-start" asChild>
                   <a href="#juridico">
                     <Phone className="mr-2" size={20} />
                     Falar com o Jurídico
                   </a>
                 </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="w-full justify-start"
-                  asChild
-                >
+
+                <Button size="lg" variant="outline" className="w-full justify-start" asChild>
                   <a href="#parcerias">
                     <Mail className="mr-2" size={20} />
                     Parcerias
@@ -224,7 +210,6 @@ const Contact = () => {
                     <p className="text-muted-foreground">contato@wagr.com.br</p>
                   </div>
                 </div>
-
                 <div className="flex items-start space-x-3">
                   <Phone className="text-accent mt-1 flex-shrink-0" size={20} />
                   <div>
@@ -232,7 +217,6 @@ const Contact = () => {
                     <p className="text-muted-foreground">+55 (11) 99999-9999</p>
                   </div>
                 </div>
-
                 <div className="flex items-start space-x-3">
                   <MapPin className="text-accent mt-1 flex-shrink-0" size={20} />
                   <div>
