@@ -41,45 +41,26 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* LOGO */}
           <Link to="/" className="flex items-center group">
-            <div className="relative h-14 lg:h-16">
-              {/* Apple-style intense neon glow effect - outer layer */}
+            <div className="relative h-16 lg:h-20">
+              {/* Apple-style subtle glow effect */}
               <div 
-                className="absolute inset-0 blur-3xl opacity-60 group-hover:opacity-80 transition-all duration-500"
+                className="absolute inset-0 blur-2xl opacity-20 group-hover:opacity-30 transition-all duration-700"
                 style={{
                   background: isHero 
-                    ? "radial-gradient(circle, rgba(254,114,27,0.7) 0%, rgba(254,114,27,0.3) 50%, transparent 70%)"
-                    : "radial-gradient(circle, hsl(var(--accent) / 0.7) 0%, hsl(var(--accent) / 0.3) 50%, transparent 70%)",
-                  transform: "scale(1.5)",
+                    ? "radial-gradient(circle, rgba(255,180,136,0.4) 0%, transparent 60%)"
+                    : "radial-gradient(circle, rgba(255,180,136,0.4) 0%, transparent 60%)",
+                  transform: "scale(1.2)",
                 }}
               />
-              {/* Middle glow layer */}
-              <div 
-                className="absolute inset-0 blur-2xl opacity-70 group-hover:opacity-90 transition-all duration-500"
-                style={{
-                  background: isHero 
-                    ? "radial-gradient(circle, rgba(254,114,27,0.8) 0%, rgba(254,114,27,0.4) 60%, transparent 70%)"
-                    : "radial-gradient(circle, hsl(var(--accent) / 0.8) 0%, hsl(var(--accent) / 0.4) 60%, transparent 70%)",
-                  transform: "scale(1.3)",
-                }}
-              />
-              {/* Inner glow layer */}
-              <div 
-                className="absolute inset-0 blur-xl opacity-80 group-hover:opacity-100 transition-all duration-500"
-                style={{
-                  background: isHero 
-                    ? "radial-gradient(circle, rgba(254,114,27,0.9) 0%, rgba(254,114,27,0.5) 50%, transparent 60%)"
-                    : "radial-gradient(circle, hsl(var(--accent) / 0.9) 0%, hsl(var(--accent) / 0.5) 50%, transparent 60%)",
-                  transform: "scale(1.1)",
-                }}
-              />
+              
               <img 
                 src={wagrLogo} 
                 alt="WAGR" 
-                className="relative h-14 lg:h-16 w-auto transition-all duration-500 group-hover:scale-110"
+                className="relative h-16 lg:h-20 w-auto transition-all duration-500 group-hover:scale-105"
                 style={{
                   filter: isHero 
-                    ? "drop-shadow(0 0 12px rgba(254,114,27,0.6)) drop-shadow(0 0 24px rgba(254,114,27,0.4)) drop-shadow(0 0 36px rgba(254,114,27,0.2))"
-                    : "drop-shadow(0 0 12px hsl(var(--accent) / 0.6)) drop-shadow(0 0 24px hsl(var(--accent) / 0.4)) drop-shadow(0 0 36px hsl(var(--accent) / 0.2))",
+                    ? "drop-shadow(0 4px 12px rgba(255,180,136,0.25)) drop-shadow(0 8px 24px rgba(255,180,136,0.15))"
+                    : "drop-shadow(0 4px 12px rgba(255,180,136,0.25)) drop-shadow(0 8px 24px rgba(255,180,136,0.15))",
                 }}
               />
             </div>
