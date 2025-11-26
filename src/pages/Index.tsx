@@ -485,7 +485,7 @@ const Index = () => {
             {/* Main Statement */}
             <div className="space-y-8">
               <h2 
-                className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light tracking-tight text-white leading-tight"
+                className="text-4xl md:text-5xl lg:text-6xl font-light tracking-tight text-white leading-tight"
                 style={{
                   fontFamily: "'Space Grotesk', system-ui, sans-serif",
                   letterSpacing: "-0.03em",
@@ -499,7 +499,7 @@ const Index = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
                 viewport={{ once: true }}
-                className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light tracking-tight leading-tight"
+                className="text-3xl md:text-4xl lg:text-5xl font-light tracking-tight leading-tight"
                 style={{
                   fontFamily: "'Space Grotesk', system-ui, sans-serif",
                   letterSpacing: "-0.02em",
@@ -543,7 +543,7 @@ const Index = () => {
                   />
                   
                   <div 
-                    className="relative px-8 md:px-12 py-4 md:py-5 rounded-full backdrop-blur-xl border transition-all duration-500 group-hover:scale-105"
+                    className="relative px-6 md:px-10 py-3 md:py-4 rounded-full backdrop-blur-xl border transition-all duration-500 group-hover:scale-105"
                     style={{
                       background: "rgba(255, 255, 255, 0.05)",
                       borderColor: "rgba(255, 122, 34, 0.3)",
@@ -551,7 +551,7 @@ const Index = () => {
                     }}
                   >
                     <span 
-                      className="text-xl md:text-2xl lg:text-3xl font-medium tracking-tight text-white"
+                      className="text-lg md:text-xl lg:text-2xl font-medium tracking-tight text-white"
                       style={{
                         fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif",
                         textShadow: "0 0 20px rgba(255,122,34,0.3)",
