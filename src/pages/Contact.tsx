@@ -38,7 +38,7 @@ const Contact = () => {
       _bcc: "alexsandro.braga@troiton.com.br, gustavoroccocorrea@hotmail.com, raffaellabernardino@gmail.com",
     };
 
-    await fetch("https://formsubmit.co/SEU_EMAIL_AQUI", {
+    await fetch("https://formsubmit.co/registros&marcas@troiton.com.br", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
