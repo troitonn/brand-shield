@@ -245,18 +245,22 @@ const Index = () => {
                 <span className="text-primary font-semibold text-sm">JURÍDICO ESPECIALIZADO</span>
               </div>
               <h2 className="font-display mb-4">
-                Atuação jurídica especializada em <span className="gradient-text">Propriedade Intelectual</span>
+                Atuação Judicial e Extrajudicial especializada em <span className="gradient-text">Propriedade Intelectual</span>
               </h2>
             </div>
             <div className="grid md:grid-cols-2 gap-4">
               {[
                 "Registro no INPI",
-                "Análises e pareceres",
                 "Oposições e defesas",
+                "Análises e pareceres",
                 "Liminares para retirada imediata",
                 "Processos de uso indevido",
                 "Perdas e danos",
-                "Recursos e contencioso",
+                "Monitoramento da marca",
+                "Notificações Extrajudiciais",
+                "Análise de uso indevido online",
+                "Recursos e contencioso", 
+              
               ].map((item, index) => (
                 <motion.div
                   key={index}
