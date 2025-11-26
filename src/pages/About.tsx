@@ -3,25 +3,25 @@ import { Linkedin } from "lucide-react";
 
 const About = () => {
   const team = [
-    {
-      name: "Alexsandro Braga",
-      role: "CEO & Tecnologia",
-      description: "Liderança em Defesa Cibernética e Transformação Digital. Visão estratégica que une profundidade técnica e sensibilidade humana.",
-      bio: "Formação em Defesa Cibernética com certificações de IBM, USP e Cisco. Especialista em unir tecnologia de ponta com estratégias de proteção empresarial.",
-    },
-    {
-      name: "Dr. Gustavo Rocco",
-      role: "Advogado Sócio",
-      description: "Especialista em Direito Processual Civil, Consumidor e Tributário.",
-      bio: "Formação multidisciplinar em Direito e Contábeis, oferece visão integrada e estratégica em Contencioso. Atuação focada em resultados mensuráveis para clientes corporativos.",
-    },
-    {
-      name: "Dra. Raffaella Bernardino",
-      role: "Especialista em Propriedade Intelectual",
-      description: "Atuação sólida Brasil e Portugal. Visão de negócios e resultados.",
-      bio: "Mente estratégica em Propriedade Intelectual, com abordagem prática orientada a performance. Experiência internacional em defesa de marcas e patentes.",
-    },
-  ];
+  {
+    name: "Alexsandro Braga",
+    role: "CEO & Founder | Tecnologia",
+    description: "Liderança em Defesa Cibernética e Transformação Digital, unindo profundidade técnica, visão estratégica e foco em resultados.",
+    bio: "CEO & Founder da **Troiton Projects+**. Profissional com formação em Defesa Cibernética e certificações pela IBM, USP e Cisco. Atua na construção de soluções tecnológicas seguras e escaláveis, alinhando inovação, governança e proteção empresarial para acelerar negócios."
+  },
+  {
+    name: "Dr. Gustavo Rocco",
+    role: "Sócio & Co-Founder | Advogado",
+    description: "Especialista em Direito Processual Civil, Direito do Consumidor e Tributário, com atuação orientada a performance jurídica empresarial.",
+    bio: "Sócio e Co-Founder do escritório **Rocco Correa Advogados**. Possui formação multidisciplinar em Direito e Ciências Contábeis, o que lhe confere visão integrada de negócios e litígios. Seu foco é a condução estratégica de contencioso com métricas, eficiência e previsibilidade jurídica."
+  },
+  {
+    name: "Dra. Raffaella Braga Bernardino",
+    role: "Founder | Advogada Especialista em Propriedade Intelectual",
+    description: "Advogada com atuação no Brasil e em Portugal. Visão jurídica global com foco em marcas, imigração, contratos e compliance.",
+    bio: "Founder da **BB Advocacia**. Advogada com experiência internacional, pós-graduada em Direito Digital e Compliance, e em formação de Mestrado em Business em Portugal. Atua estrategicamente em propriedade intelectual, imigração, contratos e planejamento tributário, oferecendo soluções jurídicas que conectam proteção legal, expansão de negócios e crescimento corporativo."
+  }
+];
 
   return (
     <section className="pt-32 pb-20 bg-gradient-to-b from-brand-ice to-background">
