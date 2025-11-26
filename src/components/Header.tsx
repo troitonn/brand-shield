@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Shield } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import wagrLogo from "@/assets/wagr-logo.png";
 
 const APPLE_BLUE = "#FE721B"; // Azul petróleo claro estilo Apple
 
@@ -39,32 +40,36 @@ const Header = () => {
       <nav className="section-container py-5">
         <div className="flex items-center justify-between">
           {/* LOGO */}
-          <Link to="/" className="flex items-center space-x-3 group">
-            <div className="relative">
-              <div className="absolute inset-0 bg-accent/20 rounded-xl blur-xl group-hover:bg-accent/30 transition-all" />
-              <Shield
-                className="relative transition-all"
-                size={32}
-                strokeWidth={2.5}
+          <Link to="/" className="flex items-center group">
+            <div className="relative h-10">
+              {/* Apple-style neon glow effect */}
+              <div 
+                className="absolute inset-0 blur-2xl opacity-40 group-hover:opacity-60 transition-opacity duration-300"
                 style={{
-                  color: isHero ? APPLE_BLUE : "var(--accent)",
-                  filter: isHero
-                    ? "drop-shadow(0 0 3px rgba(79,122,138,0.25))"
-                    : "none",
+                  background: isHero 
+                    ? "radial-gradient(circle, rgba(254,114,27,0.4) 0%, transparent 70%)"
+                    : "radial-gradient(circle, hsl(var(--accent) / 0.4) 0%, transparent 70%)",
+                }}
+              />
+              <div 
+                className="absolute inset-0 blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300"
+                style={{
+                  background: isHero 
+                    ? "radial-gradient(circle, rgba(254,114,27,0.6) 0%, transparent 60%)"
+                    : "radial-gradient(circle, hsl(var(--accent) / 0.6) 0%, transparent 60%)",
+                }}
+              />
+              <img 
+                src={wagrLogo} 
+                alt="WAGR" 
+                className="relative h-10 w-auto transition-all duration-300 group-hover:scale-105"
+                style={{
+                  filter: isHero 
+                    ? "drop-shadow(0 0 8px rgba(254,114,27,0.3))"
+                    : "drop-shadow(0 0 8px hsl(var(--accent) / 0.3))",
                 }}
               />
             </div>
-
-            <span
-              className="text-2xl font-bold font-display tracking-tight transition-all"
-              style={{
-                color: isHero ? APPLE_BLUE : "var(--primary)",
-                textShadow: isHero ? "0 0 4px rgba(79,122,138,0.25)"
-                  : "none",
-              }}
-            >
-              WAGR
-            </span>
           </Link>
 
           {/* DESKTOP NAVIGATION */}

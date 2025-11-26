@@ -16,11 +16,32 @@ const Blog = () => {
 
   const articles = [
     {
-      title: "Como Registrar uma Marca: Guia Completo 2024",
-      excerpt: "Passo a passo detalhado para registrar sua marca no INPI e garantir proteção legal completa.",
+      title: "A Importância do Registro de Marca: Protegendo o Patrimônio Imaterial da Sua Empresa",
+      excerpt: "No cenário empresarial contemporâneo, a identidade da marca tornou-se um dos ativos mais valiosos de qualquer empreendimento. Descubra por que o registro junto ao INPI é essencial para garantir segurança jurídica e exclusividade nacional.",
       category: "Registro de Marca",
+      date: "20 Nov 2024",
+      readTime: "12 min",
+    },
+    {
+      title: "Os Erros Mais Comuns no Registro de Marca e Como Evitá-los",
+      excerpt: "Registrar uma marca é cercado de aspectos técnicos e legais que, se mal conduzidos, podem comprometer totalmente a segurança do negócio. Conheça os principais erros e como evitá-los com assessoria especializada.",
+      category: "Registro de Marca",
+      date: "18 Nov 2024",
+      readTime: "10 min",
+    },
+    {
+      title: "A Diferença Entre Nome Empresarial, Nome de Domínio e Marca Registrada",
+      excerpt: "Entenda as diferenças fundamentais entre esses institutos jurídicos e como proteger sua identidade empresarial de forma completa. Cada um possui natureza distinta e proteções específicas.",
+      category: "Jurídico",
       date: "15 Nov 2024",
-      readTime: "8 min",
+      readTime: "11 min",
+    },
+    {
+      title: "Como Funciona o Processo de Registro de Marca: Entenda Antes de Agir",
+      excerpt: "O procedimento vai muito além do simples preenchimento de um formulário. Conheça todas as etapas técnicas, prazos e exigências do processo junto ao INPI e por que contar com profissionais especializados.",
+      category: "Registro de Marca",
+      date: "12 Nov 2024",
+      readTime: "9 min",
     },
     {
       title: "A Importância do Monitoramento de Marcas",
