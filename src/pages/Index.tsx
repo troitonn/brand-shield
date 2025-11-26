@@ -463,39 +463,123 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Manifesto */}
-      <section className="relative py-40 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${manifestoImage})` }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-primary/95" />
+      {/* Manifesto - Apple-Style Innovation */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+          <img
+            src={manifestoImage}
+            alt="Manifesto WAGR"
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80" />
         </div>
-        
-        <div className="relative z-10 section-container text-center">
+
+        <div className="relative z-10 section-container py-32">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
             viewport={{ once: true }}
-            className="max-w-5xl mx-auto"
+            className="text-center max-w-6xl mx-auto space-y-16"
           >
-            <p className="text-3xl md:text-4xl text-white/90 leading-relaxed mb-8 font-display">
-              Marcas nascem de histórias.
-            </p>
-            <p className="text-3xl md:text-4xl text-white leading-relaxed mb-8 font-display">
-              Nós garantimos que elas cresçam <span className="text-accent">protegidas</span>.
-            </p>
-            <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
-              <span className="text-white font-bold text-lg">Tecnologia</span>
-              <span className="text-accent">•</span>
-              <span className="text-white font-bold text-lg">Direito</span>
-              <span className="text-accent">•</span>
-              <span className="text-white font-bold text-lg">Estratégia</span>
+            {/* Main Statement */}
+            <div className="space-y-8">
+              <h2 
+                className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light tracking-tight text-white leading-tight"
+                style={{
+                  fontFamily: "'Space Grotesk', system-ui, sans-serif",
+                  letterSpacing: "-0.03em",
+                }}
+              >
+                Marcas nascem de histórias.
+              </h2>
+              
+              <motion.h3 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
+                viewport={{ once: true }}
+                className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light tracking-tight leading-tight"
+                style={{
+                  fontFamily: "'Space Grotesk', system-ui, sans-serif",
+                  letterSpacing: "-0.02em",
+                  background: "linear-gradient(135deg, #FF7A22 0%, #FFB088 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >
+                Nós garantimos que elas cresçam protegidas.
+              </motion.h3>
             </div>
+
+            {/* DNA Pills - Apple Style */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+              viewport={{ once: true }}
+              className="flex flex-wrap items-center justify-center gap-4 md:gap-6 pt-8"
+            >
+              {["Tecnologia", "Direito", "Estratégia"].map((item, index) => (
+                <motion.div
+                  key={item}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: 0.8 + (index * 0.15),
+                    ease: [0.25, 0.1, 0.25, 1]
+                  }}
+                  viewport={{ once: true }}
+                  className="group relative"
+                >
+                  {/* Glow effect */}
+                  <div 
+                    className="absolute inset-0 rounded-full blur-2xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"
+                    style={{
+                      background: "radial-gradient(circle, rgba(255,122,34,0.6) 0%, transparent 70%)",
+                    }}
+                  />
+                  
+                  <div 
+                    className="relative px-8 md:px-12 py-4 md:py-5 rounded-full backdrop-blur-xl border transition-all duration-500 group-hover:scale-105"
+                    style={{
+                      background: "rgba(255, 255, 255, 0.05)",
+                      borderColor: "rgba(255, 122, 34, 0.3)",
+                      boxShadow: "0 0 20px rgba(255,122,34,0.1), inset 0 0 20px rgba(255,255,255,0.05)",
+                    }}
+                  >
+                    <span 
+                      className="text-xl md:text-2xl lg:text-3xl font-medium tracking-tight text-white"
+                      style={{
+                        fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif",
+                        textShadow: "0 0 20px rgba(255,122,34,0.3)",
+                      }}
+                    >
+                      {item}
+                    </span>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            {/* Subtle separator dot */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 1.4 }}
+              viewport={{ once: true }}
+              className="flex justify-center pt-8"
+            >
+              <div 
+                className="w-2 h-2 rounded-full"
+                style={{
+                  background: "rgba(255, 122, 34, 0.6)",
+                  boxShadow: "0 0 20px rgba(255,122,34,0.8)",
+                }}
+              />
+            </motion.div>
           </motion.div>
         </div>
       </section>
