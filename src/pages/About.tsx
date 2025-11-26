@@ -5,7 +5,7 @@ const About = () => {
   const team = [
   {
     name: "Alexsandro Braga",
-    role: "CEO & Founder | Tecnologia",
+    role: "Sócio & Co-Founder | Tecnologia",
     description: "Liderança em Defesa Cibernética e Transformação Digital, unindo profundidade técnica, visão estratégica e foco em resultados.",
     bio: "CEO & Founder da **Troiton Projects+**. Profissional com formação em Defesa Cibernética e certificações pela IBM, USP e Cisco. Atua na construção de soluções tecnológicas seguras e escaláveis, alinhando inovação, governança e proteção empresarial para acelerar negócios."
   },
@@ -17,7 +17,7 @@ const About = () => {
   },
   {
     name: "Dra. Raffaella Braga Bernardino",
-    role: "Founder | Advogada Especialista em Propriedade Intelectual",
+    role: "Sócia & Co-Founder | Advogada Especialista em Propriedade Intelectual",
     description: "Advogada com atuação no Brasil e em Portugal. Visão jurídica global com foco em marcas, imigração, contratos e compliance.",
     bio: "Founder da **BB Advocacia**. Advogada com experiência internacional, pós-graduada em Direito Digital e Compliance, e em formação de Mestrado em Business em Portugal. Atua estrategicamente em propriedade intelectual, imigração, contratos e planejamento tributário, oferecendo soluções jurídicas que conectam proteção legal, expansão de negócios e crescimento corporativo."
   }
