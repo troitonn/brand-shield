@@ -340,32 +340,37 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Monitoramento */}
-      <section className="py-20 bg-brand-ice">
-        <div className="section-container">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto text-center"
-          >
-            <h2 className="text-4xl font-bold text-primary mb-6">
-              Proteção contínua da sua marca.
-            </h2>
-            <p className="text-lg mb-8">
-              Monitoramos semanalmente: Marcas semelhantes • Nomes • Logos • Domínios • 
-              Páginas falsas • Campanhas pagas com uso indevido.
-            </p>
-            <div className="bg-background p-6 rounded-lg border-l-4 border-accent">
-              <p className="font-semibold">
-                Ao detectar risco → notificamos → agimos → defendemos.
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+section class="space-y-6">
+  <h2 class="text-2xl font-bold text-gray-900">
+    Proteção Contínua da Sua Marca
+  </h2>
 
+  <p class="text-gray-700 leading-relaxed">
+    Oferecemos um monitoramento integral e inteligente, capaz de identificar, em tempo real, qualquer risco à identidade e reputação do seu negócio.
+  </p>
+
+  <p class="text-gray-800 font-semibold">
+    Nosso sistema avançado monitora:
+  </p>
+
+  <ul class="list-disc list-inside space-y-1 text-gray-700">
+    <li>Marcas semelhantes ou potencialmente colidentes</li>
+    <li>Nomes e variações fonéticas</li>
+    <li>Logos e elementos visuais</li>
+    <li>Domínios e páginas suspeitas</li>
+    <li>Perfis falsos e uso indevido nas redes</li>
+    <li>Anúncios e campanhas de tráfego pago utilizando sua marca sem autorização</li>
+  </ul>
+
+  <div class="pt-4">
+    <p class="text-gray-900 font-semibold">Quando detectamos um risco, agimos imediatamente:</p>
+    <p class="font-bold text-indigo-600 text-lg tracking-wide">
+      Detectamos → Notificamos → Atuamos → Defendemos sua marca.
+    </p>
+  </div>
+</section>
+
+    
       {/* Uso Indevido */}
       <section className="py-20 bg-background">
         <div className="section-container">
