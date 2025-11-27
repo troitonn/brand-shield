@@ -463,9 +463,6 @@ const Index = () => {
 
 {/* Cards dos Sócios */}
 <div className="grid md:grid-cols-3 gap-12">
-
-<div className="grid md:grid-cols-3 gap-12">
-
   {/* RAFFAELLA */}
   <motion.div
     initial={{ opacity: 0, y: 20 }}
