@@ -340,44 +340,32 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Monitoramento */}
+      <section className="py-20 bg-brand-ice">
+        <div className="section-container">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto text-center"
+          >
+            <h2 className="text-4xl font-bold text-primary mb-6">
+              Proteção contínua da sua marca.
+            </h2>
+            <p className="text-lg mb-8">
+              Monitoramos semanalmente: Marcas semelhantes • Nomes • Logos • Domínios • 
+              Páginas falsas • Campanhas pagas com uso indevido.
+            </p>
+            <div className="bg-background p-6 rounded-lg border-l-4 border-accent">
+              <p className="font-semibold">
+                Ao detectar risco → notificamos → agimos → defendemos.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
-            {/* proteçãos */}
-      <section className="py-32 bg-muted/30">
-  <div className="max-w-4xl mx-auto px-6 space-y-12 text-center">
-    <h2 className="font-display text-4xl md:text-5xl">
-      Proteção Contínua da Sua Marca
-    </h2>
-
-    <p className="text-lg text-muted-foreground leading-relaxed">
-      Oferecemos um monitoramento integral e inteligente, capaz de identificar, 
-      em tempo real, qualquer risco à identidade e reputação do seu negócio.
-    </p>
-
-    <div className="text-left">
-      <p className="text-xl font-semibold mb-3">Nosso sistema avançado monitora:</p>
-      <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-        <li>Marcas semelhantes ou potencialmente colidentes</li>
-        <li>Nomes e variações fonéticas</li>
-        <li>Logos e elementos visuais</li>
-        <li>Domínios e páginas suspeitas</li>
-        <li>Perfis falsos e uso indevido nas redes</li>
-        <li>Anúncios e campanhas de tráfego pago utilizando sua marca sem autorização</li>
-      </ul>
-    </div>
-
-    <div className="pt-6">
-      <p className="text-lg font-semibold">
-        Quando detectamos um risco, agimos imediatamente:
-      </p>
-      <p className="text-2xl font-bold mt-2 text-indigo-600">
-        Identificamos → Notificamos → Atuamos → Defendemos sua marca
-      </p>
-    </div>
-  </div>
-</section>
-
-
-    
       {/* Uso Indevido */}
       <section className="py-20 bg-background">
         <div className="section-container">
@@ -550,7 +538,7 @@ const Index = () => {
   <h3 className="font-display text-2xl mt-6">Alexsandro Braga</h3>
   <p className="text-accent font-semibold">Sócio & Co-Founder</p>
   <p className="text-muted-foreground mt-3 leading-relaxed">
-  Especialista em Cybersecurity e Transformação Digital. CEO & Founder da <strong>Troiton Projects+</strong>, lidera operações estratégicas e projetos de alta performance. Certificado por IBM, USP e Cisco, projeta soluções robustas, escaláveis e blindadas, integrando inovação, governança e excelência operacional para acelerar negócios e fortalecer a resiliência de empresas.
+    Especialista em Cybersecurity e Transformação Digital. CEO & Founder da <strong>Troiton Projects+</strong>, lidera operações estratégicas e projetos de alta performance. Certificado por IBM, USP e Cisco, projeta soluções robustas, escaláveis e blindadas, integrando inovação, governança e excelência operacional para acelerar negócios e fortalecer a resiliência de empresas.
   </p>
 </motion.div>
 
