@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import ServiceCard from "@/components/ServiceCard";
+import wagrImage from "@/assets/WARGsorriso.png";
 import {
   Shield,
   Eye,
@@ -241,12 +242,11 @@ const Index = () => {
       className="relative flex justify-center"
     >
       <div className="relative w-full max-w-md">
-        <img
-          src="/src/assets/WARGsorriso.png"
-          alt="Equipe WAGR"
-          className="w-full object-contain drop-shadow-2xl rounded-xl"
-        />
-
+      <img
+      src={wagrImage}
+      alt="Equipe WAGR"
+      className="w-full object-contain drop-shadow-2xl rounded-xl"
+    />
         {/* DEGRADÊ FLUTUANTE NA BASE */}
         <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-background to-transparent pointer-events-none" />
       </div>
