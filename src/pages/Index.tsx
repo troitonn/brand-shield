@@ -483,10 +483,10 @@ const Index = () => {
       Dra. Raffaella Bernardino
     </h3>
     <p className="text-accent font-semibold">
-      Sócia & Co-Founder | Advogada Especialista em Propriedade Intelectual
+      Sócia & Co-Founder
     </p>
     <p className="text-muted-foreground mt-3 leading-relaxed">
-      Advogada com atuação no Brasil e em Portugal. Visão jurídica global com foco em marcas,
+      Especialista em Propriedade Intelectual, advogada com atuação no Brasil e em Portugal. Visão jurídica global com foco em marcas,
       imigração, contratos e compliance. Founder da <strong>BB Advocacia</strong>, pós-graduada
       em Direito Digital e Compliance e em formação de Mestrado em Business em Portugal. Conecta
       proteção legal, expansão de negócios e crescimento corporativo.
@@ -510,9 +510,9 @@ const Index = () => {
     </div>
 
     <h3 className="font-display text-2xl mt-6">Dr. Gustavo Rocco</h3>
-    <p className="text-accent font-semibold">Sócio & Co-Founder | Advogado</p>
+    <p className="text-accent font-semibold">Sócio & Co-Founder </p>
     <p className="text-muted-foreground mt-3 leading-relaxed">
-      Especialista em Processo Civil, Consumidor e Tributário. Co-Founder da
+      Especialista em Processo Civil, Consumidor e Tributário. Advogado Co-Founder da
       <strong> Rocco Correa Advogados</strong>. Formação multidisciplinar em Direito e Ciências
       Contábeis, com foco em litígios empresariais orientados a performance, previsibilidade
       e eficiência jurídica.
@@ -536,9 +536,10 @@ const Index = () => {
     </div>
 
     <h3 className="font-display text-2xl mt-6">Alexsandro Braga</h3>
-    <p className="text-accent font-semibold">Sócio & Co-Founder | Tecnologia</p>
+    <p className="text-accent font-semibold">Sócio & Co-Founder</p>
     <p className="text-muted-foreground mt-3 leading-relaxed">
-      Liderança em Defesa Cibernética e Transformação Digital. CEO & Founder da <strong>Troiton Projects+</strong>, conduz operações com visão estratégica e execução de alta precisão. Formado em Defesa Cibernética, certificado por IBM, USP e Cisco, projeta soluções robustas, escaláveis e blindadas, integrando inovação, governança e performance empresarial para acelerar negócios.
+    Especialista em Cybersecurity e Operações de transformação Digital. CEO & Founder da
+<strong>Troiton Projects+</strong>. Atuação sólida em segurança da informação, automação e governança de TI, com certificações IBM, USP e Cisco. Lidera operações e conduz projetos focados em escalabilidade, resiliência digital e performance máxima para empresas que exigem precisão técnica, visão estratégica e proteção avançada.
     </p>
   </motion.div>
 </div>
