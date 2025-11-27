@@ -340,6 +340,8 @@ const Index = () => {
         </div>
       </section>
 
+
+            {/* proteçãos */}
       <section className="py-32 bg-muted/30">
         <div className="max-w-4xl mx-auto px-6 space-y-12">
       
