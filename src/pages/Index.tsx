@@ -341,78 +341,30 @@ const Index = () => {
       </section>
 
       {/* Monitoramento */}
-<section class="bg-white p-6 rounded-lg shadow-md max-w-3xl">
-  <h2 class="text-2xl font-semibold mb-3">Monitoramento integral e inteligente</h2>
-
-  <p class="text-lg text-gray-700 mb-6">
-    Oferecemos um monitoramento integral e inteligente, capaz de identificar, em tempo real, qualquer risco à identidade e reputação do seu negócio.
-  </p>
-
-  <div class="bg-gray-50 p-4 rounded-md mb-6 border border-gray-100">
-    <p class="italic text-sm text-gray-600">Nosso sistema avançado monitora:</p>
-  </div>
-
-  <ul class="space-y-4">
-    <li class="flex items-start gap-3">
-      <!-- ícone simples (check) -->
-      <svg class="w-6 h-6 flex-shrink-0 text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.879-7.879a1 1 0 011.414 0z" clip-rule="evenodd"/>
-      </svg>
-      <div>
-        <span class="font-medium text-gray-800">Marcas semelhantes ou potencialmente colidentes</span>
-      </div>
-    </li>
-
-    <li class="flex items-start gap-3">
-      <svg class="w-6 h-6 flex-shrink-0 text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.879-7.879a1 1 0 011.414 0z" clip-rule="evenodd"/>
-      </svg>
-      <div>
-        <span class="font-medium text-gray-800">Nomes e variações fonéticas</span>
-      </div>
-    </li>
-
-    <li class="flex items-start gap-3">
-      <svg class="w-6 h-6 flex-shrink-0 text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.879-7.879a1 1 0 011.414 0z" clip-rule="evenodd"/>
-      </svg>
-      <div>
-        <span class="font-medium text-gray-800">Logos e elementos visuais</span>
-      </div>
-    </li>
-
-    <li class="flex items-start gap-3">
-      <svg class="w-6 h-6 flex-shrink-0 text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.879-7.879a1 1 0 011.414 0z" clip-rule="evenodd"/>
-      </svg>
-      <div>
-        <span class="font-medium text-gray-800">Domínios e páginas suspeitas</span>
-      </div>
-    </li>
-
-    <li class="flex items-start gap-3">
-      <svg class="w-6 h-6 flex-shrink-0 text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.879-7.879a1 1 0 011.414 0z" clip-rule="evenodd"/>
-      </svg>
-      <div>
-        <span class="font-medium text-gray-800">Perfis falsos e uso indevido nas redes</span>
-      </div>
-    </li>
-
-    <li class="flex items-start gap-3">
-      <svg class="w-6 h-6 flex-shrink-0 text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.879-7.879a1 1 0 011.414 0z" clip-rule="evenodd"/>
-      </svg>
-      <div>
-        <span class="font-medium text-gray-800">Anúncios e campanhas de tráfego pago utilizando sua marca sem autorização</span>
-      </div>
-    </li>
-  </ul>
-
-  <p class="mt-6 text-sm text-gray-500">
-    Monitoramento contínuo, alertas em tempo real e relatórios acionáveis para proteger sua marca.
-  </p>
-</section>
+      <section className="py-20 bg-brand-ice">
+        <div className="section-container">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto text-center"
+          >
+            <h2 className="text-4xl font-bold text-primary mb-6">
+              Proteção contínua da sua marca.
+            </h2>
+            <p className="text-lg mb-8">
+              Monitoramos semanalmente: Marcas semelhantes • Nomes • Logos • Domínios • 
+              Páginas falsas • Campanhas pagas com uso indevido.
+            </p>
+            <div className="bg-background p-6 rounded-lg border-l-4 border-accent">
+              <p className="font-semibold">
+                Ao detectar risco → notificamos → agimos → defendemos.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
       {/* Uso Indevido */}
       <section className="py-20 bg-background">
@@ -527,10 +479,17 @@ const Index = () => {
       />
     </div>
 
-    <h3 className="font-display text-2xl mt-6">Dra. Raffaella Bernardino</h3>
-    <p className="text-accent font-semibold">Sócia & Co-Founder</p>
+    <h3 className="font-display text-2xl mt-6">
+      Dra. Raffaella Bernardino
+    </h3>
+    <p className="text-accent font-semibold">
+      Sócia & Co-Founder
+    </p>
     <p className="text-muted-foreground mt-3 leading-relaxed">
-      Especialista em Propriedade Intelectual, advogada com atuação no Brasil e em Portugal. Visão jurídica global com foco em marcas, imigração, contratos e compliance. Founder da <strong>BB Advocacia</strong>, pós-graduada em Direito Digital e Compliance e em formação de Mestrado em Business em Portugal. Conecta proteção legal, expansão de negócios e crescimento corporativo.
+      Especialista em Propriedade Intelectual, advogada com atuação no Brasil e em Portugal. Visão jurídica global com foco em marcas,
+      imigração, contratos e compliance. Founder da <strong>BB Advocacia</strong>, pós-graduada
+      em Direito Digital e Compliance e em formação de Mestrado em Business em Portugal. Conecta
+      proteção legal, expansão de negócios e crescimento corporativo.
     </p>
   </motion.div>
 
@@ -551,35 +510,37 @@ const Index = () => {
     </div>
 
     <h3 className="font-display text-2xl mt-6">Dr. Gustavo Rocco</h3>
-    <p className="text-accent font-semibold">Sócio & Co-Founder</p>
+    <p className="text-accent font-semibold">Sócio & Co-Founder </p>
     <p className="text-muted-foreground mt-3 leading-relaxed">
-      Especialista em Processo Civil, Consumidor e Tributário. Advogado Co-Founder da <strong>Rocco Correa Advogados</strong>. Formação multidisciplinar em Direito e Ciências Contábeis, com foco em litígios empresariais orientados a performance, previsibilidade e eficiência jurídica.
+      Especialista em Processo Civil, Consumidor e Tributário. Advogado Co-Founder da
+      <strong> Rocco Correa Advogados</strong>. Formação multidisciplinar em Direito e Ciências
+      Contábeis, com foco em litígios empresariais orientados a performance, previsibilidade
+      e eficiência jurídica.
     </p>
   </motion.div>
 
-  {/* ALEX */}
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6, delay: 0.3 }}
-    viewport={{ once: true }}
-    className="group"
-  >
-    <div className="relative overflow-hidden rounded-2xl bg-muted/20 border border-border">
-      <img
-        src={alexImage}
-        alt="Alexsandro Braga"
-        className="w-full h-80 object-cover object-top rounded-2xl transition-transform duration-700 group-hover:scale-105"
-      />
-    </div>
+{/* ALEX */}
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.3 }}
+  viewport={{ once: true }}
+  className="group"
+>
+  <div className="relative overflow-hidden rounded-2xl bg-muted/20 border border-border">
+    <img
+      src={alexImage}
+      alt="Alexsandro Braga"
+      className="w-full h-80 object-cover object-top rounded-2xl transition-transform duration-700 group-hover:scale-105"
+    />
+  </div>
 
-    <h3 className="font-display text-2xl mt-6">Alexsandro Braga</h3>
-    <p className="text-accent font-semibold">Sócio & Co-Founder</p>
-    <p className="text-muted-foreground mt-3 leading-relaxed">
-      Especialista em Cybersecurity e Transformação Digital. CEO & Founder da <strong>Troiton Projects+</strong>, lidera operações estratégicas e projetos de alta performance. Certificado por IBM, USP e Cisco, projeta soluções robustas, escaláveis e blindadas, integrando inovação, governança e excelência operacional para acelerar negócios e fortalecer a resiliência de empresas.
-    </p>
-  </motion.div>
-</div>
+  <h3 className="font-display text-2xl mt-6">Alexsandro Braga</h3>
+  <p className="text-accent font-semibold">Sócio & Co-Founder</p>
+  <p className="text-muted-foreground mt-3 leading-relaxed">
+  Especialista em Cybersecurity e Transformação Digital. CEO & Founder da <strong>Troiton Projects+</strong>, lidera operações estratégicas e projetos de alta performance. Certificado por IBM, USP e Cisco, projeta soluções robustas, escaláveis e blindadas, integrando inovação, governança e excelência operacional para acelerar negócios e fortalecer a resiliência de empresas.
+  </p>
+</motion.div>
 
           {/* CTA */}
           <div className="text-center mt-20">
