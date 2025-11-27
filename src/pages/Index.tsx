@@ -344,8 +344,11 @@ const Index = () => {
 <section className="py-20 bg-brand-ice">
   <div className="max-w-4xl mx-auto px-6 space-y-8 text-center">
     
-    <h2 className="text-4xl md:text-5xl font-bold text-primary">
-      Proteção Contínua da Sua Marca
+    <h2 className="text-4xl md:text-5xl font-bold">
+      <span className="bg-gradient-to-r from-orange-500 to-black bg-clip-text text-transparent">
+        Proteção
+      </span>{" "}
+      Contínua da Sua Marca
     </h2>
     
     <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -377,6 +380,7 @@ const Index = () => {
 
   </div>
 </section>
+
 
 
       {/* Uso Indevido */}
