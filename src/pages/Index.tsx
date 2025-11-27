@@ -340,33 +340,67 @@ const Index = () => {
         </div>
       </section>
 
-section class="space-y-6">
-  <h2 class="text-2xl font-bold text-gray-900">
-    Proteção Contínua da Sua Marca
-  </h2>
+{/* Proteção Contínua */}
+<section className="py-32 bg-muted/30">
+  <div className="section-container max-w-4xl mx-auto space-y-8">
 
-  <p class="text-gray-700 leading-relaxed">
-    Oferecemos um monitoramento integral e inteligente, capaz de identificar, em tempo real, qualquer risco à identidade e reputação do seu negócio.
-  </p>
+    <motion.h2
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+      className="font-display text-4xl md:text-5xl text-center"
+    >
+      Proteção Contínua da Sua Marca
+    </motion.h2>
 
-  <p class="text-gray-800 font-semibold">
-    Nosso sistema avançado monitora:
-  </p>
+    <motion.p
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.1 }}
+      viewport={{ once: true }}
+      className="text-lg text-muted-foreground text-center leading-relaxed"
+    >
+      Monitoramento integral e inteligente, capaz de detectar, em tempo real,
+      qualquer ameaça à identidade e reputação do seu negócio.
+    </motion.p>
 
-  <ul class="list-disc list-inside space-y-1 text-gray-700">
-    <li>Marcas semelhantes ou potencialmente colidentes</li>
-    <li>Nomes e variações fonéticas</li>
-    <li>Logos e elementos visuais</li>
-    <li>Domínios e páginas suspeitas</li>
-    <li>Perfis falsos e uso indevido nas redes</li>
-    <li>Anúncios e campanhas de tráfego pago utilizando sua marca sem autorização</li>
-  </ul>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+      viewport={{ once: true }}
+      className="space-y-4"
+    >
+      <p className="text-xl font-semibold text-foreground">
+        Nosso sistema avançado monitora:
+      </p>
 
-  <div class="pt-4">
-    <p class="text-gray-900 font-semibold">Quando detectamos um risco, agimos imediatamente:</p>
-    <p class="font-bold text-indigo-600 text-lg tracking-wide">
-      Detectamos → Notificamos → Atuamos → Defendemos sua marca.
-    </p>
+      <ul className="grid md:grid-cols-2 gap-2 text-muted-foreground text-base">
+        <li>• Marcas semelhantes ou com colisão de registro</li>
+        <li>• Nomes e variações fonéticas</li>
+        <li>• Logos e elementos visuais</li>
+        <li>• Domínios, e-commerces e páginas suspeitas</li>
+        <li>• Perfis falsos e uso indevido nas redes sociais</li>
+        <li>• Anúncios e campanhas pagas usando sua marca</li>
+      </ul>
+    </motion.div>
+
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.3 }}
+      viewport={{ once: true }}
+      className="pt-8 text-center"
+    >
+      <p className="text-lg font-semibold mb-2 text-foreground">
+        Quando um risco aparece, não esperamos:
+      </p>
+
+      <p className="text-3xl md:text-4xl font-bold tracking-wide bg-gradient-to-r from-indigo-400 to-indigo-600 bg-clip-text text-transparent">
+        Detectamos → Notificamos → Atuamos → Defendemos sua marca
+      </p>
+    </motion.div>
   </div>
 </section>
 
