@@ -1,3 +1,5 @@
+import Image from "next/image";
+import WARGsorriso from "@/assets/WARGsorriso.png";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -232,6 +234,30 @@ const Index = () => {
       </p>
     </motion.div>
 
+<section className="py-32 bg-gradient-to-b from-background to-muted/30">
+  <div className="section-container grid lg:grid-cols-2 gap-12 items-center">
+    {/* LADO ESQUERDO - TEXTO */}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      className="max-w-4xl"
+    >
+      <div className="inline-block mb-6 px-4 py-1 rounded-full bg-accent/10 border border-accent/20">
+        <span className="text-accent font-semibold text-sm">SOBRE A WAGR</span>
+      </div>
+
+      <h2 className="font-display mb-8">
+        A união entre <span className="gradient-text">tech e direito</span>
+      </h2>
+
+      <p className="text-xl text-muted-foreground leading-relaxed">
+        A WAGR une tecnologia de ponta, advocacia especializada e estratégia de marca. 
+        Protegemos negócios do início ao fim — do nome ao crescimento exponencial.
+      </p>
+    </motion.div>
+
     {/* LADO DIREITO - IMAGEM COM EFEITO */}
     <motion.div
       initial={{ opacity: 0, x: 20 }}
@@ -241,19 +267,17 @@ const Index = () => {
       className="relative w-full flex justify-center"
     >
       <div className="relative w-full max-w-md">
-        
-        {/* IMAGEM */}
-        <img 
-          src="/src/assets/WARGsorriso.png"
-          alt="Equipe WAGR"
-          className="w-full object-contain drop-shadow-2xl"
+        <Image
+          src={WARGsorriso}
+          alt="Equipe WAGR sorrindo"
+          className="w-full object-contain drop-shadow-2xl rounded-xl"
+          sizes="(max-width: 1024px) 80vw, 40vw"
         />
 
         {/* DEGRADÊ NA PARTE INFERIOR */}
-        <div className="absolute bottom-0 left-0 w-full h-28 bg-gradient-to-t from-background to-transparent pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-full h-28 bg-gradient-to-t from-[var(--background)] to-transparent pointer-events-none" />
       </div>
     </motion.div>
-
   </div>
 </section>
 
