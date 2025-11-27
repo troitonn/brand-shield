@@ -391,7 +391,7 @@ const Index = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.3 }}
       viewport={{ once: true }}
-      className="pt-8 text-center"
+      className="pt-8 text-center space-y-4"
     >
       <p className="text-lg font-semibold mb-2 text-foreground">
         Quando um risco aparece, não esperamos:
@@ -400,10 +400,16 @@ const Index = () => {
       <p className="text-3xl md:text-4xl font-bold tracking-wide bg-gradient-to-r from-indigo-400 to-indigo-600 bg-clip-text text-transparent">
         Detectamos → Notificamos → Atuamos → Defendemos sua marca
       </p>
+
+      <p className="text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+        Não importa onde a ameaça surja — marketplace, redes sociais, anúncios,
+        concorrentes ou domínios fraudulentos — nossa equipe jurídica e
+        tecnológica atua imediatamente para proteger o que é seu.
+      </p>
     </motion.div>
+
   </div>
 </section>
-
     
       {/* Uso Indevido */}
       <section className="py-20 bg-background">
