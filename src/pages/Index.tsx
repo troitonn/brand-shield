@@ -247,7 +247,7 @@ const Index = () => {
         <img
           src={wagrImage}
           alt="Equipe WAGR"
-          className="w-full object-contain drop-shadow-2xl rounded-xl"
+          className="w-full object-contain rounded-xl"
         />
     
         {/* Fade SUAVE e REAL */}
