@@ -341,30 +341,78 @@ const Index = () => {
       </section>
 
       {/* Monitoramento */}
-      <section className="py-20 bg-brand-ice">
-        <div className="section-container">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto text-center"
-          >
-            <h2 className="text-4xl font-bold text-primary mb-6">
-              Proteção contínua da sua marca.
-            </h2>
-            <p className="text-lg mb-8">
-              Monitoramos semanalmente: Marcas semelhantes • Nomes • Logos • Domínios • 
-              Páginas falsas • Campanhas pagas com uso indevido.
-            </p>
-            <div className="bg-background p-6 rounded-lg border-l-4 border-accent">
-              <p className="font-semibold">
-                Ao detectar risco → notificamos → agimos → defendemos.
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+<section class="bg-white p-6 rounded-lg shadow-md max-w-3xl">
+  <h2 class="text-2xl font-semibold mb-3">Monitoramento integral e inteligente</h2>
+
+  <p class="text-lg text-gray-700 mb-6">
+    Oferecemos um monitoramento integral e inteligente, capaz de identificar, em tempo real, qualquer risco à identidade e reputação do seu negócio.
+  </p>
+
+  <div class="bg-gray-50 p-4 rounded-md mb-6 border border-gray-100">
+    <p class="italic text-sm text-gray-600">Nosso sistema avançado monitora:</p>
+  </div>
+
+  <ul class="space-y-4">
+    <li class="flex items-start gap-3">
+      <!-- ícone simples (check) -->
+      <svg class="w-6 h-6 flex-shrink-0 text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.879-7.879a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
+      <div>
+        <span class="font-medium text-gray-800">Marcas semelhantes ou potencialmente colidentes</span>
+      </div>
+    </li>
+
+    <li class="flex items-start gap-3">
+      <svg class="w-6 h-6 flex-shrink-0 text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.879-7.879a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
+      <div>
+        <span class="font-medium text-gray-800">Nomes e variações fonéticas</span>
+      </div>
+    </li>
+
+    <li class="flex items-start gap-3">
+      <svg class="w-6 h-6 flex-shrink-0 text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.879-7.879a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
+      <div>
+        <span class="font-medium text-gray-800">Logos e elementos visuais</span>
+      </div>
+    </li>
+
+    <li class="flex items-start gap-3">
+      <svg class="w-6 h-6 flex-shrink-0 text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.879-7.879a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
+      <div>
+        <span class="font-medium text-gray-800">Domínios e páginas suspeitas</span>
+      </div>
+    </li>
+
+    <li class="flex items-start gap-3">
+      <svg class="w-6 h-6 flex-shrink-0 text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.879-7.879a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
+      <div>
+        <span class="font-medium text-gray-800">Perfis falsos e uso indevido nas redes</span>
+      </div>
+    </li>
+
+    <li class="flex items-start gap-3">
+      <svg class="w-6 h-6 flex-shrink-0 text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.879-7.879a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
+      <div>
+        <span class="font-medium text-gray-800">Anúncios e campanhas de tráfego pago utilizando sua marca sem autorização</span>
+      </div>
+    </li>
+  </ul>
+
+  <p class="mt-6 text-sm text-gray-500">
+    Monitoramento contínuo, alertas em tempo real e relatórios acionáveis para proteger sua marca.
+  </p>
+</section>
 
       {/* Uso Indevido */}
       <section className="py-20 bg-background">
