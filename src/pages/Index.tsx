@@ -483,10 +483,10 @@ const Index = () => {
       Dra. Raffaella Bernardino
     </h3>
     <p className="text-accent font-semibold">
-      Sócia & Co-Founder
+      Sócia & Co-Founder | Advogada Especialista em Propriedade Intelectual
     </p>
     <p className="text-muted-foreground mt-3 leading-relaxed">
-      Especialista em Propriedade Intelectual, advogada com atuação no Brasil e em Portugal. Visão jurídica global com foco em marcas,
+      Advogada com atuação no Brasil e em Portugal. Visão jurídica global com foco em marcas,
       imigração, contratos e compliance. Founder da <strong>BB Advocacia</strong>, pós-graduada
       em Direito Digital e Compliance e em formação de Mestrado em Business em Portugal. Conecta
       proteção legal, expansão de negócios e crescimento corporativo.
@@ -510,38 +510,38 @@ const Index = () => {
     </div>
 
     <h3 className="font-display text-2xl mt-6">Dr. Gustavo Rocco</h3>
-    <p className="text-accent font-semibold">Sócio & Co-Founder </p>
+    <p className="text-accent font-semibold">Sócio & Co-Founder | Advogado</p>
     <p className="text-muted-foreground mt-3 leading-relaxed">
-      Especialista em Processo Civil, Consumidor e Tributário. Advogado Co-Founder da
+      Especialista em Processo Civil, Consumidor e Tributário. Co-Founder da
       <strong> Rocco Correa Advogados</strong>. Formação multidisciplinar em Direito e Ciências
       Contábeis, com foco em litígios empresariais orientados a performance, previsibilidade
       e eficiência jurídica.
     </p>
   </motion.div>
 
-{/* ALEX */}
-<motion.div
-  initial={{ opacity: 0, y: 20 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6, delay: 0.3 }}
-  viewport={{ once: true }}
-  className="group"
->
-  <div className="relative overflow-hidden rounded-2xl bg-muted/20 border border-border">
-    <img
-      src={alexImage}
-      alt="Alexsandro Braga"
-      className="w-full h-80 object-cover object-top rounded-2xl transition-transform duration-700 group-hover:scale-105"
-    />
-  </div>
+  {/* ALEX */}
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: 0.3 }}
+    viewport={{ once: true }}
+    className="group"
+  >
+    <div className="relative overflow-hidden rounded-2xl bg-muted/20 border border-border">
+      <img
+        src={alexImage}
+        alt="Alexsandro Braga"
+        className="w-full h-80 object-cover object-top rounded-2xl transition-transform duration-700 group-hover:scale-105"
+      />
+    </div>
 
-  <h3 className="font-display text-2xl mt-6">Alexsandro Braga</h3>
-  <p className="text-accent font-semibold">Sócio & Co-Founder</p>
-  <p className="text-muted-foreground mt-3 leading-relaxed">
-    Especialista em Cybersecurity e Transformação Digital. CEO & Founder da <strong>Troiton Projects+</strong>, lidera operações estratégicas e projetos de alta performance. Certificado por IBM, USP e Cisco, projeta soluções robustas, escaláveis e blindadas, integrando inovação, governança e excelência operacional para acelerar negócios e fortalecer a resiliência de empresas.
-  </p>
-</motion.div>
-
+    <h3 className="font-display text-2xl mt-6">Alexsandro Braga</h3>
+    <p className="text-accent font-semibold">Sócio & Co-Founder | Tecnologia</p>
+    <p className="text-muted-foreground mt-3 leading-relaxed">
+      Liderança em Defesa Cibernética e Transformação Digital. CEO & Founder da <strong>Troiton Projects+</strong>, conduz operações com visão estratégica e execução de alta precisão. Formado em Defesa Cibernética, certificado por IBM, USP e Cisco, projeta soluções robustas, escaláveis e blindadas, integrando inovação, governança e performance empresarial para acelerar negócios.
+    </p>
+  </motion.div>
+</div>
           {/* CTA */}
           <div className="text-center mt-20">
             <Link
