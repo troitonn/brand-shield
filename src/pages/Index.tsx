@@ -462,7 +462,7 @@ const Index = () => {
     </motion.div>
 
           {/* Cards dos Sócios */}
-      {/* Cards dos Sócios */}
+{/* Cards dos Sócios */}
 <div className="grid md:grid-cols-3 gap-12">
 
   {/* RAFFAELLA */}
@@ -477,12 +477,12 @@ const Index = () => {
       <img
         src={raffaImage}
         alt="Dra. Raffaella Braga Bernardino"
-        className="w-full h-[420px] object-top rounded-2xl transition-transform duration-700 group-hover:scale-105"
+        className="w-full aspect-[3/4] object-contain p-2 rounded-2xl transition-transform duration-700 group-hover:scale-105"
       />
     </div>
 
     <h3 className="font-display text-2xl mt-6">
-      Dra. Raffaella Braga Bernardino
+      Dra. Raffaella Bernardino
     </h3>
     <p className="text-accent font-semibold">
       Sócia & Co-Founder | Advogada Especialista em Propriedade Intelectual
@@ -507,7 +507,7 @@ const Index = () => {
       <img
         src={gustavoImage}
         alt="Dr. Gustavo Rocco"
-        className="w-full h-[420px] object-top rounded-2xl transition-transform duration-700 group-hover:scale-105"
+        className="w-full aspect-[3/4] object-contain p-2 rounded-2xl transition-transform duration-700 group-hover:scale-105"
       />
     </div>
 
@@ -535,7 +535,7 @@ const Index = () => {
       <img
         src={alexImage}
         alt="Alexsandro Braga"
-        className="w-full h-[420px] object-top rounded-2xl transition-transform duration-700 group-hover:scale-105"
+        className="w-full aspect-[3/4] object-contain p-2 rounded-2xl transition-transform duration-700 group-hover:scale-105"
       />
     </div>
 
@@ -544,16 +544,13 @@ const Index = () => {
       Sócio & Co-Founder | Tecnologia
     </p>
     <p className="text-muted-foreground mt-3 leading-relaxed">
-      Liderança em Defesa Cibernética e Transformação Digital. CEO & Founder da
-      <strong> Troiton Projects+</strong>. Formação em Defesa Cibernética com certificações pela
-      IBM, USP e Cisco. Constrói soluções tecnológicas seguras e escaláveis, aliando inovação,
-      governança e proteção empresarial.
+ Liderança em Defesa Cibernética e Transformação Digital. CEO & Founder da <strong>Troiton Projects+</strong>, conduz operações com visão estratégica e execução de alta precisão. Formado em Defesa Cibernética, certificado por IBM, USP e Cisco, projeta soluções robustas, escaláveis e blindadas, integrando inovação, governança e performance empresarial para acelerar negócios. 
+      
     </p>
   </motion.div>
 
 </div>
 
-      
           {/* CTA */}
           <div className="text-center mt-20">
             <Link
@@ -566,8 +563,7 @@ const Index = () => {
       
         </div>
       </section>
-      
-
+    
       
       {/* Casos / Prova Social */}
       <section className="py-20 bg-background">
