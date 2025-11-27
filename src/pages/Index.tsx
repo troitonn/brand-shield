@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import ServiceCard from "@/components/ServiceCard";
 import wagrImage from "@/assets/WARGsorriso.png";
 import alexImage from "@/assets/alex.jpg";
-import gustavoImage from "@/assets/team/gustavo.jpg";
-import raffaImage from "@/assets/team/raffa.jpg";
+import gustavoImage from "@/assets/gustavo.jpg";
+import raffaImage from "@/assets/raffa.jpg";
 
 import {
   Shield,
