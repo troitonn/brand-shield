@@ -462,98 +462,97 @@ const Index = () => {
     </motion.div>
 
           {/* Cards dos Sócios */}
-          <div className="grid md:grid-cols-3 gap-12">
-            
-            {/* RAFFAELLA */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="group"
-            >
-              <div className="relative overflow-hidden rounded-2xl bg-muted/20 border border-border">
-                <img
-                  src={raffaImage}
-                  alt="Dra. Raffaella Braga Bernardino"
-                  className="w-full h-80 object-cover rounded-2xl transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-      
-              <h3 className="font-display text-2xl mt-6">
-                Dra. Raffaella Braga Bernardino
-              </h3>
-              <p className="text-accent font-semibold">
-                Sócia & Co-Founder | Advogada Especialista em Propriedade Intelectual
-              </p>
-      
-              <p className="text-muted-foreground mt-3 leading-relaxed">
-                Advogada com atuação no Brasil e em Portugal. Visão jurídica global com foco em marcas,
-                imigração, contratos e compliance. Founder da <strong>BB Advocacia</strong>, pós-graduada
-                em Direito Digital e Compliance e em formação de Mestrado em Business em Portugal.
-                Conecta proteção legal, expansão de negócios e crescimento corporativo.
-              </p>
-            </motion.div>
-      
-            {/* GUSTAVO */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="group"
-            >
-              <div className="relative overflow-hidden rounded-2xl bg-muted/20 border border-border">
-                <img
-                  src={gustavoImage}
-                  alt="Dr. Gustavo Rocco"
-                  className="w-full h-80 object-cover rounded-2xl transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-      
-              <h3 className="font-display text-2xl mt-6">Dr. Gustavo Rocco</h3>
-              <p className="text-accent font-semibold">
-                Sócio & Co-Founder | Advogado
-              </p>
-      
-              <p className="text-muted-foreground mt-3 leading-relaxed">
-                Especialista em Processo Civil, Consumidor e Tributário. Co-Founder da
-                <strong> Rocco Correa Advogados</strong>. Formação multidisciplinar em Direito e Ciências
-                Contábeis, com foco em litígios empresariais orientados a performance,
-                previsibilidade e eficiência jurídica.
-              </p>
-            </motion.div>
-      
-            {/* ALEX */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="group"
-            >
-              <div className="relative overflow-hidden rounded-2xl bg-muted/20 border border-border">
-                <img
-                  src={alexImage}
-                  alt="Alexsandro Braga"
-                  className="w-full h-80 object-cover rounded-2xl transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-      
-              <h3 className="font-display text-2xl mt-6">Alexsandro Braga</h3>
-              <p className="text-accent font-semibold">
-                Sócio & Co-Founder | Tecnologia
-              </p>
-      
-              <p className="text-muted-foreground mt-3 leading-relaxed">
-                Liderança em Defesa Cibernética e Transformação Digital. CEO & Founder da
-                <strong> Troiton Projects+</strong>. Formação em Defesa Cibernética com certificações pela
-                IBM, USP e Cisco. Constrói soluções tecnológicas seguras e escaláveis, aliando inovação,
-                governança e proteção empresarial.
-              </p>
-            </motion.div>
-      
-          </div>
+      {/* Cards dos Sócios */}
+<div className="grid md:grid-cols-3 gap-12">
+
+  {/* RAFFAELLA */}
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: 0.1 }}
+    viewport={{ once: true }}
+    className="group"
+  >
+    <div className="relative overflow-hidden rounded-2xl bg-muted/20 border border-border">
+      <img
+        src={raffaImage}
+        alt="Dra. Raffaella Braga Bernardino"
+        className="w-full h-[420px] object-top rounded-2xl transition-transform duration-700 group-hover:scale-105"
+      />
+    </div>
+
+    <h3 className="font-display text-2xl mt-6">
+      Dra. Raffaella Braga Bernardino
+    </h3>
+    <p className="text-accent font-semibold">
+      Sócia & Co-Founder | Advogada Especialista em Propriedade Intelectual
+    </p>
+    <p className="text-muted-foreground mt-3 leading-relaxed">
+      Advogada com atuação no Brasil e em Portugal. Visão jurídica global com foco em marcas,
+      imigração, contratos e compliance. Founder da <strong>BB Advocacia</strong>, pós-graduada
+      em Direito Digital e Compliance e em formação de Mestrado em Business em Portugal. Conecta
+      proteção legal, expansão de negócios e crescimento corporativo.
+    </p>
+  </motion.div>
+
+  {/* GUSTAVO */}
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: 0.2 }}
+    viewport={{ once: true }}
+    className="group"
+  >
+    <div className="relative overflow-hidden rounded-2xl bg-muted/20 border border-border">
+      <img
+        src={gustavoImage}
+        alt="Dr. Gustavo Rocco"
+        className="w-full h-[420px] object-top rounded-2xl transition-transform duration-700 group-hover:scale-105"
+      />
+    </div>
+
+    <h3 className="font-display text-2xl mt-6">Dr. Gustavo Rocco</h3>
+    <p className="text-accent font-semibold">
+      Sócio & Co-Founder | Advogado
+    </p>
+    <p className="text-muted-foreground mt-3 leading-relaxed">
+      Especialista em Processo Civil, Consumidor e Tributário. Co-Founder da
+      <strong> Rocco Correa Advogados</strong>. Formação multidisciplinar em Direito e Ciências
+      Contábeis, com foco em litígios empresariais orientados a performance, previsibilidade
+      e eficiência jurídica.
+    </p>
+  </motion.div>
+
+  {/* ALEX */}
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: 0.3 }}
+    viewport={{ once: true }}
+    className="group"
+  >
+    <div className="relative overflow-hidden rounded-2xl bg-muted/20 border border-border">
+      <img
+        src={alexImage}
+        alt="Alexsandro Braga"
+        className="w-full h-[420px] object-top rounded-2xl transition-transform duration-700 group-hover:scale-105"
+      />
+    </div>
+
+    <h3 className="font-display text-2xl mt-6">Alexsandro Braga</h3>
+    <p className="text-accent font-semibold">
+      Sócio & Co-Founder | Tecnologia
+    </p>
+    <p className="text-muted-foreground mt-3 leading-relaxed">
+      Liderança em Defesa Cibernética e Transformação Digital. CEO & Founder da
+      <strong> Troiton Projects+</strong>. Formação em Defesa Cibernética com certificações pela
+      IBM, USP e Cisco. Constrói soluções tecnológicas seguras e escaláveis, aliando inovação,
+      governança e proteção empresarial.
+    </p>
+  </motion.div>
+
+</div>
+
       
           {/* CTA */}
           <div className="text-center mt-20">
