@@ -340,76 +340,75 @@ const Index = () => {
         </div>
       </section>
 
-{/* Proteção Contínua */}
-<section className="py-32 bg-muted/30">
-  <div className="section-container max-w-4xl mx-auto space-y-8">
-
-    <motion.h2
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      viewport={{ once: true }}
-      className="font-display text-4xl md:text-5xl text-center"
-    >
-      Proteção Contínua da Sua Marca
-    </motion.h2>
-
-    <motion.p
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.1 }}
-      viewport={{ once: true }}
-      className="text-lg text-muted-foreground text-center leading-relaxed"
-    >
-      Monitoramento integral e inteligente, capaz de detectar, em tempo real,
-      qualquer ameaça à identidade e reputação do seu negócio.
-    </motion.p>
-
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.2 }}
-      viewport={{ once: true }}
-      className="space-y-4"
-    >
-      <p className="text-xl font-semibold text-foreground">
-        Nosso sistema avançado monitora:
-      </p>
-
-      <ul className="grid md:grid-cols-2 gap-2 text-muted-foreground text-base">
-        <li>• Marcas semelhantes ou com colisão de registro</li>
-        <li>• Nomes e variações fonéticas</li>
-        <li>• Logos e elementos visuais</li>
-        <li>• Domínios, e-commerces e páginas suspeitas</li>
-        <li>• Perfis falsos e uso indevido nas redes sociais</li>
-        <li>• Anúncios e campanhas pagas usando sua marca</li>
-      </ul>
-    </motion.div>
-
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.3 }}
-      viewport={{ once: true }}
-      className="pt-8 text-center space-y-4"
-    >
-      <p className="text-lg font-semibold mb-2 text-foreground">
-        Quando um risco aparece, não esperamos:
-      </p>
-
-      <p className="text-3xl md:text-4xl font-bold tracking-wide bg-gradient-to-r from-indigo-400 to-indigo-600 bg-clip-text text-transparent">
-        Detectamos → Notificamos → Atuamos → Defendemos sua marca
-      </p>
-
-      <p className="text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-        Não importa onde a ameaça surja — marketplace, redes sociais, anúncios,
-        concorrentes ou domínios fraudulentos — nossa equipe jurídica e
-        tecnológica atua imediatamente para proteger o que é seu.
-      </p>
-    </motion.div>
-
-  </div>
-</section>
+      <section className="py-32 bg-muted/30">
+        <div className="max-w-4xl mx-auto px-6 space-y-12">
+      
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="font-display text-4xl md:text-5xl text-center"
+          >
+            Proteção Contínua da Sua Marca
+          </motion.h2>
+      
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="text-lg text-muted-foreground text-center leading-relaxed max-w-3xl mx-auto"
+          >
+            Monitoramento integral e inteligente, capaz de detectar, em tempo real,
+            qualquer ameaça à identidade e reputação do seu negócio.
+          </motion.p>
+      
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="space-y-5"
+          >
+            <p className="text-xl font-semibold text-foreground">
+              Nosso sistema avançado monitora:
+            </p>
+      
+            <ul className="grid gap-3 md:grid-cols-2 text-muted-foreground text-base">
+              <li>• Marcas semelhantes ou com colisão de registro</li>
+              <li>• Nomes e variações fonéticas</li>
+              <li>• Logos e elementos visuais</li>
+              <li>• Domínios, e-commerces e páginas suspeitas</li>
+              <li>• Perfis falsos e uso indevido nas redes sociais</li>
+              <li>• Anúncios e campanhas pagas usando sua marca</li>
+            </ul>
+          </motion.div>
+      
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="pt-10 text-center space-y-6"
+          >
+            <p className="text-lg font-semibold text-foreground">
+              Quando um risco aparece, não esperamos:
+            </p>
+      
+            <p className="text-3xl md:text-4xl font-bold tracking-wide bg-gradient-to-r from-indigo-400 to-indigo-600 bg-clip-text text-transparent">
+              Detectamos → Notificamos → Atuamos → Defendemos sua marca
+            </p>
+      
+            <p className="text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Não importa onde a ameaça surja — marketplace, redes sociais, anúncios,
+              concorrentes ou domínios fraudulentos — nossa equipe jurídica e tecnológica
+              atua imediatamente para proteger o que é seu.
+            </p>
+          </motion.div>
+      
+        </div>
+      </section>
     
       {/* Uso Indevido */}
       <section className="py-20 bg-background">
