@@ -538,7 +538,7 @@ const Index = () => {
   <h3 className="font-display text-2xl mt-6">Alexsandro Braga</h3>
   <p className="text-accent font-semibold">Sócio & Co-Founder</p>
   <p className="text-muted-foreground mt-3 leading-relaxed">
-    Especialista em Cybersecurity e Transformação Digital. CEO & Founder da <strong>Troiton Projects+</strong>, lidera operações estratégicas e projetos de alta performance. Certificado por IBM, USP e Cisco, projeta soluções robustas, escaláveis e blindadas, integrando inovação, governança e excelência operacional para acelerar negócios e fortalecer a resiliência de empresas.
+  Especialista em Cybersecurity e Transformação Digital. CEO & Founder da <strong>Troiton Projects+</strong>, lidera operações estratégicas e projetos de alta performance. Certificado por IBM, USP e Cisco, projeta soluções robustas, escaláveis e blindadas, integrando inovação, governança e excelência operacional para acelerar negócios e fortalecer a resiliência de empresas.
   </p>
 </motion.div>
 
