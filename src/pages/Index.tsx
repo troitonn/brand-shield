@@ -242,7 +242,7 @@ const Index = () => {
     >
       <div className="relative w-full max-w-md">
         <img
-          src="@/src/assets/WARGsorriso.png"
+          src="/src/assets/WARGsorriso.png"
           alt="Equipe WAGR"
           className="w-full object-contain drop-shadow-2xl rounded-xl"
         />
