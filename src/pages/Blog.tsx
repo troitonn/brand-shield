@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
-import { Calendar } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Calendar, ArrowRight } from "lucide-react";
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState("Todos");
@@ -20,6 +22,7 @@ const Blog = () => {
       date: "20 Nov 2024",
       readTime: "12 min",
       author: "Raffaella Bernardino",
+      slug: "importancia-registro-marca",
     },
     {
       title: "Os Erros Mais Comuns no Registro de Marca e Como Evitá-los",
@@ -28,6 +31,7 @@ const Blog = () => {
       date: "18 Nov 2024",
       readTime: "10 min",
       author: "Raffaella Bernardino",
+      slug: "erros-comuns-registro-marca",
     },
     {
       title: "A Diferença Entre Nome Empresarial, Nome de Domínio e Marca Registrada",
@@ -36,6 +40,7 @@ const Blog = () => {
       date: "15 Nov 2024",
       readTime: "11 min",
       author: "Raffaella Bernardino",
+      slug: "diferenca-nome-empresarial-dominio-marca",
     },
     {
       title: "Como Funciona o Processo de Registro de Marca: Entenda Antes de Agir",
@@ -44,6 +49,7 @@ const Blog = () => {
       date: "12 Nov 2024",
       readTime: "9 min",
       author: "Raffaella Bernardino",
+      slug: "como-funciona-processo-registro-marca",
     },
   ];
 
@@ -90,7 +96,7 @@ const Blog = () => {
             ))}
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {filteredArticles.map((article, index) => (
               <motion.article
                 key={index}
@@ -98,9 +104,9 @@ const Blog = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-card rounded-lg border border-border hover:border-accent transition-all duration-300 overflow-hidden group cursor-pointer"
+                className="bg-card rounded-lg border border-border hover:border-accent transition-all duration-300 overflow-hidden group"
               >
-                <div className="p-6">
+                <div className="p-6 flex flex-col h-full">
                   <div className="flex items-center justify-between mb-4">
                     <Badge variant="secondary">{article.category}</Badge>
                     <span className="text-sm text-muted-foreground">
@@ -110,16 +116,25 @@ const Blog = () => {
                   <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors">
                     {article.title}
                   </h3>
-                  <p className="text-muted-foreground mb-4 line-clamp-2">
+                  <p className="text-muted-foreground mb-4 line-clamp-3 flex-grow">
                     {article.excerpt}
                   </p>
-                  <div className="flex items-center justify-between text-sm text-muted-foreground">
+                  <div className="flex items-center justify-between text-sm text-muted-foreground mb-4">
                     <div className="flex items-center">
                       <Calendar size={16} className="mr-2" />
                       {article.date}
                     </div>
                     <span className="font-medium text-foreground/70">{article.author}</span>
                   </div>
+                  <Link to={`/blog/${article.slug}`}>
+                    <Button 
+                      variant="outline" 
+                      className="w-full group-hover:bg-accent group-hover:text-accent-foreground group-hover:border-accent transition-all"
+                    >
+                      Ler artigo completo
+                      <ArrowRight size={16} className="ml-2" />
+                    </Button>
+                  </Link>
                 </div>
               </motion.article>
             ))}
