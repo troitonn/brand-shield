@@ -561,7 +561,7 @@ const Index = () => {
           {/* CTA */}
           <div className="text-center mt-20">
             <Link
-              href="/sobre"
+              to="/sobre"
               className="inline-block px-8 py-4 rounded-xl bg-accent text-white text-lg font-semibold hover:opacity-90 transition"
             >
               Conheça a história completa da WAGR →

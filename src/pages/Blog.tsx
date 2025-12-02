@@ -9,74 +9,41 @@ const Blog = () => {
   const categories = [
     "Todos",
     "Registro de Marca",
-    "Monitoramento",
     "Jurídico",
-    "B2B",
   ];
 
   const articles = [
     {
       title: "A Importância do Registro de Marca: Protegendo o Patrimônio Imaterial da Sua Empresa",
-      excerpt: "No cenário empresarial contemporâneo, a identidade da marca tornou-se um dos ativos mais valiosos de qualquer empreendimento. Descubra por que o registro junto ao INPI é essencial para garantir segurança jurídica e exclusividade nacional.",
+      excerpt: "No cenário empresarial contemporâneo, marcado por intensa concorrência e constante inovação, a identidade da marca tornou-se um dos ativos mais valiosos de qualquer empreendimento. Mais do que um nome, um logotipo ou um símbolo gráfico, a marca representa a essência da empresa.",
       category: "Registro de Marca",
       date: "20 Nov 2024",
       readTime: "12 min",
+      author: "Raffaella Bernardino",
     },
     {
       title: "Os Erros Mais Comuns no Registro de Marca e Como Evitá-los",
-      excerpt: "Registrar uma marca é cercado de aspectos técnicos e legais que, se mal conduzidos, podem comprometer totalmente a segurança do negócio. Conheça os principais erros e como evitá-los com assessoria especializada.",
+      excerpt: "Registrar uma marca é um dos passos mais importantes para consolidar juridicamente a identidade de uma empresa. No entanto, o processo de registro é cercado de aspectos técnicos e legais que, se mal conduzidos, podem comprometer totalmente a segurança do negócio.",
       category: "Registro de Marca",
       date: "18 Nov 2024",
       readTime: "10 min",
+      author: "Raffaella Bernardino",
     },
     {
       title: "A Diferença Entre Nome Empresarial, Nome de Domínio e Marca Registrada",
-      excerpt: "Entenda as diferenças fundamentais entre esses institutos jurídicos e como proteger sua identidade empresarial de forma completa. Cada um possui natureza distinta e proteções específicas.",
+      excerpt: "No ambiente empresarial, é comum que termos como nome empresarial, nome de domínio e marca registrada sejam utilizados como sinônimos. No entanto, esses institutos jurídicos possuem naturezas distintas, são regulados por órgãos diferentes e conferem proteções específicas.",
       category: "Jurídico",
       date: "15 Nov 2024",
       readTime: "11 min",
+      author: "Raffaella Bernardino",
     },
     {
       title: "Como Funciona o Processo de Registro de Marca: Entenda Antes de Agir",
-      excerpt: "O procedimento vai muito além do simples preenchimento de um formulário. Conheça todas as etapas técnicas, prazos e exigências do processo junto ao INPI e por que contar com profissionais especializados.",
+      excerpt: "Registrar uma marca é um procedimento que vai muito além do simples preenchimento de um formulário. Trata-se de um processo administrativo técnico, regido por normas jurídicas específicas, e que exige conhecimento, estratégia e acompanhamento constante.",
       category: "Registro de Marca",
       date: "12 Nov 2024",
       readTime: "9 min",
-    },
-    {
-      title: "A Importância do Monitoramento de Marcas",
-      excerpt: "Entenda por que o monitoramento contínuo é essencial para proteger sua marca contra uso indevido.",
-      category: "Monitoramento",
-      date: "10 Nov 2024",
-      readTime: "6 min",
-    },
-    {
-      title: "Liminares em Propriedade Intelectual",
-      excerpt: "Como obter tutelas de urgência para proteger sua marca rapidamente contra concorrentes.",
-      category: "Jurídico",
-      date: "05 Nov 2024",
-      readTime: "10 min",
-    },
-    {
-      title: "Gestão de Marcas para Escritórios de Advocacia",
-      excerpt: "Soluções tecnológicas para escritórios escalarem a gestão de propriedade intelectual.",
-      category: "B2B",
-      date: "01 Nov 2024",
-      readTime: "7 min",
-    },
-    {
-      title: "Classes de Marca: Qual Escolher?",
-      excerpt: "Guia prático para escolher as classes corretas no registro de marca no INPI.",
-      category: "Registro de Marca",
-      date: "28 Out 2024",
-      readTime: "5 min",
-    },
-    {
-      title: "Uso Indevido de Marca: Como Agir",
-      excerpt: "Ações jurídicas disponíveis quando sua marca é copiada ou usada sem autorização.",
-      category: "Jurídico",
-      date: "22 Out 2024",
-      readTime: "9 min",
+      author: "Raffaella Bernardino",
     },
   ];
 
@@ -146,9 +113,12 @@ const Blog = () => {
                   <p className="text-muted-foreground mb-4 line-clamp-2">
                     {article.excerpt}
                   </p>
-                  <div className="flex items-center text-sm text-muted-foreground">
-                    <Calendar size={16} className="mr-2" />
-                    {article.date}
+                  <div className="flex items-center justify-between text-sm text-muted-foreground">
+                    <div className="flex items-center">
+                      <Calendar size={16} className="mr-2" />
+                      {article.date}
+                    </div>
+                    <span className="font-medium text-foreground/70">{article.author}</span>
                   </div>
                 </div>
               </motion.article>
