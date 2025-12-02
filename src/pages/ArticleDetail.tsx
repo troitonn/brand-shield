@@ -218,6 +218,157 @@ const articles = {
       <p>Conte com a WAGR para garantir que sua marca esteja protegida com a seriedade e a expertise que o seu negócio merece.</p>
     `,
   },
+  "liminar-uso-indevido-marca": {
+    title: "Como Obter uma Liminar para Impedir Imediatamente o Uso Indevido da Marca",
+    metaDescription: "Saiba como obter uma liminar judicial para cessar imediatamente o uso indevido da sua marca. Tutela de urgência em propriedade industrial.",
+    category: "Judicial",
+    date: "08 Nov 2024",
+    readTime: "10 min",
+    author: "Dr. Gustavo Rocco",
+    content: `
+      <p>Quando uma empresa se depara com o uso indevido de sua marca por terceiros, a reação precisa ser rápida. O dano à reputação, a confusão do consumidor e o desvio de clientela acontecem de imediato e se intensificam com o passar dos dias.</p>
+      <p>A legislação brasileira prevê uma solução eficaz para impedir que o prejuízo se prolongue. Trata-se da tutela de urgência, conhecida na prática como liminar, um instrumento fundamental para suspender o uso da marca muito antes do encerramento do processo.</p>
+
+      <h2>Base Legal da Proteção</h2>
+      <p>No campo da Propriedade Industrial, a proteção da marca decorre do artigo 129 da Lei 9.279 de 1996, que estabelece que a propriedade da marca se adquire pelo registro validamente expedido pelo INPI.</p>
+      <p>Isso significa que o detentor do registro possui exclusividade para utilizá-la em todo o território nacional, dentro da classe para a qual foi concedida. O artigo também confere ao titular o direito de zelar pela integridade material e reputação da marca, o que inclui impedir terceiros de usá-la de forma indevida ou gerar associação com o seu negócio.</p>
+
+      <h2>Quando Buscar a Tutela de Urgência</h2>
+      <p>Quando ocorre violação, o titular pode buscar apoio judicial imediato. O Código de Processo Civil, em seus artigos 294 a 300, disciplina a tutela de urgência, que pode ser deferida quando houver probabilidade do direito e perigo de dano.</p>
+      <p>No contexto das ações de marca, a probabilidade do direito é geralmente demonstrada pelo certificado de registro do INPI ou pela decisão de deferimento publicada na Revista da Propriedade Industrial. Esses documentos comprovam que o titular possui direito exclusivo, tornando evidente a ilicitude do uso por terceiros.</p>
+      <p>O perigo de dano é igualmente relevante. A utilização indevida de marca gera risco concreto e imediato de confusão no mercado, afetando diretamente a percepção dos consumidores. Também pode causar prejuízo financeiro, desvio de clientela, diluição do sinal distintivo e desgaste reputacional.</p>
+
+      <h2>Abrangência da Liminar</h2>
+      <p>Com esses elementos demonstrados, o juiz pode conceder a liminar para ordenar a cessação imediata da violação. Essa ordem pode abranger:</p>
+      <ul>
+        <li>Sites e redes sociais</li>
+        <li>Placas e anúncios</li>
+        <li>Embalagens e rótulos</li>
+        <li>Uniformes e materiais gráficos</li>
+        <li>Plataformas de marketplace</li>
+        <li>Campanhas de tráfego pago</li>
+      </ul>
+      <p>Em casos de contrafação, o artigo 209 da Lei de Propriedade Industrial autoriza o juiz a determinar medidas mais enérgicas, como apreensão de produtos, destruição de mercadorias falsificadas e lacre de equipamentos.</p>
+
+      <h2>Força Coercitiva e Consequências</h2>
+      <p>A liminar tem força coercitiva expressiva. O descumprimento pode levar à imposição de multa diária com base no artigo 297 do CPC, além de configurar atos atentatórios à dignidade da justiça. Dependendo da conduta, também pode haver responsabilização criminal, já que os artigos 189 e 190 da Lei de Propriedade Industrial tipificam o uso indevido e a reprodução indevida de marca como crimes contra a propriedade industrial.</p>
+
+      <h2>Provas Necessárias</h2>
+      <p>Para que a liminar seja deferida, é indispensável apresentar um conjunto de provas sólido:</p>
+      <ul>
+        <li>Prints de redes sociais e anúncios pagos</li>
+        <li>Fotos de produtos e notas fiscais</li>
+        <li>Capturas de tela de anúncios no Google</li>
+        <li>Registros de conversas de consumidores</li>
+        <li>Pesquisas comparativas e laudos técnicos</li>
+        <li>Atas notariais</li>
+      </ul>
+      <p>A prova não precisa ser exaustiva nesse momento, mas deve ser suficiente para mostrar ao juiz que a continuidade da conduta gera dano imediato e irreversível.</p>
+
+      <h2>Conclusão</h2>
+      <p>Diante de um cenário de concorrência acirrada, proteger a marca com rapidez é ato de gestão empresarial. A liminar garante que a identidade visual e reputacional da empresa não seja apropriada por terceiros, preservando a confiança dos consumidores e a integridade do negócio.</p>
+      <p>Se você identificou uso indevido de sua marca, seja em redes sociais, em produtos, em publicidade digital ou em atividades concorrenciais, é possível interromper essa prática imediatamente por meio de uma liminar. Uma análise técnica adequada permite definir a estratégia correta e buscar a proteção que sua marca merece.</p>
+    `,
+  },
+  "anular-marca-registrada-inpi": {
+    title: "Quando é Possível Anular Judicialmente uma Marca Registrada no INPI",
+    metaDescription: "Saiba quando e como anular judicialmente uma marca registrada no INPI. Ação de nulidade de registro de marca e proteção empresarial.",
+    category: "Judicial",
+    date: "05 Nov 2024",
+    readTime: "11 min",
+    author: "Dr. Gustavo Rocco",
+    content: `
+      <p>Nem sempre o registro de marca concedido pelo INPI está correto. É comum que marcas sejam deferidas mesmo apresentando impedimentos legais, colidindo com direitos anteriores ou violando critérios de distintividade previstos na legislação.</p>
+      <p>Nessas situações, a lei permite que o verdadeiro titular do direito ou qualquer pessoa juridicamente interessada ingresse com uma ação judicial para anular o registro. Essa demanda é conhecida como Ação de Nulidade de Registro de Marca e representa um instrumento essencial de proteção empresarial quando o sistema administrativo falha.</p>
+
+      <h2>Base Legal</h2>
+      <p>A legislação brasileira de propriedade industrial, especialmente a Lei 9.279 de 1996, prevê expressamente que registros concedidos em desconformidade com a lei são nulos.</p>
+      <p>O artigo 173 estabelece que a nulidade pode ser declarada de ofício pelo INPI ou por meio de decisão judicial, mediante provocação de quem se sentir prejudicado. Já o artigo 174 define que a ação judicial deve ser proposta no prazo de cinco anos a partir da concessão do registro, quando se tratar de nulidade relativa. Em casos de nulidade absoluta, o interesse público se sobrepõe e não há limitação temporal.</p>
+
+      <h2>Motivos para Nulidade</h2>
+      <p>A nulidade pode ser requerida por diversos motivos. Um dos mais frequentes é a concessão de uma marca semelhante ou idêntica a outra já registrada anteriormente, violando o direito de precedência previsto no artigo 129 da lei.</p>
+      <p>Também pode ocorrer quando a marca concedida é:</p>
+      <ul>
+        <li>Descritiva ou genérica</li>
+        <li>Enganosa ou ofensiva</li>
+        <li>Reproduz signo proibido</li>
+        <li>Colide com nome empresarial</li>
+        <li>Conflita com título de estabelecimento</li>
+        <li>Viola nome de domínio</li>
+        <li>Prejudica marca utilizada de boa-fé por terceiro</li>
+      </ul>
+
+      <h2>Procedimento Judicial</h2>
+      <p>A ação de nulidade é ajuizada perante a Justiça Federal, já que o INPI obrigatoriamente integra o polo passivo. A petição inicial deve demonstrar, de forma técnica e fundamentada, quais dispositivos legais foram descumpridos no momento da concessão do registro.</p>
+      <p>Essa etapa exige conhecimento especializado, pois o juiz analisará não apenas a aparência dos sinais, mas os critérios de confundibilidade, afinidade mercadológica, grau de distintividade da marca anterior e risco de associação indevida no público consumidor.</p>
+
+      <h2>Provas e Medidas Cautelares</h2>
+      <p>Durante o processo, o Requerente pode apresentar provas que demonstrem a anterioridade do uso da marca, o potencial de confusão, o prejuízo gerado pela coexistência indevida e a violação direta da legislação. Prints, anúncios, contratos, embalagens, histórico de comercialização, pesquisas de mercado e até perícias técnicas podem ser utilizados.</p>
+      <p>Uma medida relevante é que a parte prejudicada pode solicitar tutela de urgência para impedir o uso da marca enquanto o processo tramita, caso haja risco de prejuízo irreparável.</p>
+
+      <h2>Efeitos da Decisão</h2>
+      <p>A decisão judicial pode declarar a nulidade total ou parcial do registro. Quando a nulidade é total, o registro inteiro é desconstituído e a empresa perde o direito de uso exclusivo. Quando é parcial, o juiz pode restringir produtos, serviços ou classes relacionadas ao conflito.</p>
+      <p>Em ambos os cenários, os efeitos da nulidade retroagem à data do depósito do pedido, conforme determina o artigo 175 da Lei de Propriedade Industrial. Isso significa que a empresa nunca deveria ter obtido aquela proteção.</p>
+
+      <h2>Conclusão</h2>
+      <p>Para empresários que dependem da força da marca para se posicionar no mercado, a ação de nulidade é um importante mecanismo de defesa. Ela corrige erros do próprio INPI e impede que terceiros se apropriem de sinais que não lhes pertencem.</p>
+      <p>Se a sua empresa identificou que um concorrente obteve registro indevido de uma marca semelhante à sua, é possível agir de forma estratégica.</p>
+    `,
+  },
+  "uso-indevido-marca-trafego-pago-redes-sociais": {
+    title: "Uso Indevido da Marca em Tráfego Pago e Redes Sociais no Ambiente Digital",
+    metaDescription: "Proteja sua marca contra uso indevido em Google Ads, redes sociais e tráfego pago. Saiba como agir juridicamente contra concorrência desleal digital.",
+    category: "Judicial",
+    date: "01 Nov 2024",
+    readTime: "12 min",
+    author: "Dr. Gustavo Rocco",
+    content: `
+      <p>O mundo digital exige atenção especial à proteção de marcas. No ambiente de anúncios patrocinados, como Google Ads, e nas redes sociais como Instagram, TikTok ou Facebook, o uso indevido de uma marca registrada pode provocar danos imediatos e irreparáveis.</p>
+      <p>Quando um concorrente ou terceiro sem autorização utiliza palavras-chave, links patrocinados ou hashtags que remetem diretamente à sua marca, que induzem o consumidor a erro ou desviam clientela, ocorre prática que ultrapassa o mero marketing agressivo e adentra o domínio da responsabilidade civil e da concorrência desleal.</p>
+
+      <h2>Base Legal</h2>
+      <p>A legislação brasileira contempla esse tipo de conduta como ilícita. A Lei n.º 9.279/1996, que regula a propriedade industrial, no seu artigo 209 autoriza que o prejudicado pleiteie perdas e danos decorrentes de violação de direitos de propriedade industrial ou atos de concorrência desleal, inclusive quando tais atos tendem a criar confusão entre estabelecimentos ou produtos.</p>
+      <p>A prática de adquirir como palavra-chave para Google Ads o nome de marca alheia ou de usar esse nome em anúncio patrocinado de concorrente, já foi reconhecida pelos tribunais como conduta de concorrência desleal e violação de marca registrada.</p>
+
+      <h2>Jurisprudência Recente</h2>
+      <p>Em 09 de julho de 2024, o Superior Tribunal de Justiça (STJ), no REsp n.º 2.096.417/SP manteve condenação contra o Google Brasil por links patrocinados em que a palavra-chave continha marca de terceiro, entendendo que o provedor não atua como mero hospedeiro quando comercializa termos que violam a marca.</p>
+      <p>A Câmara Reservada de Direito Empresarial do Tribunal de Justiça de São Paulo também entendeu que "o uso de elemento nominativo de marca registrada alheia dotado de suficiente distintividade e no mesmo ramo de atividade como vocábulo de busca à divulgação de anúncios contratados junto a provedores de pesquisas" caracterizou concorrência desleal.</p>
+
+      <h2>A Conduta Típica</h2>
+      <p>Na prática digital, a conduta típica é a seguinte: o consumidor digita na ferramenta de busca ou na rede social o nome da sua marca registrada. A plataforma apresenta anúncios patrocinados que utilizam exatamente aquele nome ou terminologia extremamente similar, direcionando o usuário à página de um concorrente.</p>
+      <p>Dessa forma ocorre desvio de clientela, redução de tráfego e diluição da marca, o que configura ato de concorrência desleal.</p>
+
+      <h2>Como Agir Juridicamente</h2>
+      <p>Para quem enfrenta situação semelhante, a atuação jurídica começa pela demonstração da titularidade da marca. O certificado de registro expedido pelo INPI ou a publicação do deferimento na Revista da Propriedade Industrial são documentos suficientes para comprovar o direito exclusivo.</p>
+      <p>Em seguida, é preciso registrar a ocorrência dos anúncios ou conteúdos infratores:</p>
+      <ul>
+        <li>Prints e gravações de navegação</li>
+        <li>Relatórios de palavras-chave</li>
+        <li>Políticas de publicidade aplicáveis</li>
+        <li>Pesquisas comparativas</li>
+        <li>Ata notarial</li>
+      </ul>
+
+      <h2>Demonstração do Prejuízo</h2>
+      <p>Outro ponto fundamental é demonstrar que o uso da marca no ambiente digital gera risco real de confusão e prejuízo ao público consumidor. No contexto atual, a disputa por visibilidade ocorre em segundos e qualquer interferência indevida pode reduzir tráfego, comprometer a taxa de conversão e desvalorizar a presença digital da empresa.</p>
+      <p>Relatórios de queda de acesso, reclamações de consumidores confundidos ou perda de posicionamento no buscador contribuem para evidenciar a necessidade de uma resposta judicial rápida.</p>
+
+      <h2>Medidas Judiciais</h2>
+      <p>Com esses elementos reunidos, é possível solicitar em juízo:</p>
+      <ul>
+        <li>Remoção imediata dos anúncios</li>
+        <li>Suspensão das campanhas</li>
+        <li>Bloqueio do uso digital da marca</li>
+        <li>Aplicação de multa diária</li>
+        <li>Indenização por danos materiais e morais</li>
+      </ul>
+      <p>A tutela de urgência se mostra extremamente eficaz nesses casos, pois interrompe o uso indevido antes mesmo do término do processo, preservando a reputação e a integridade mercadológica do negócio.</p>
+
+      <h2>Conclusão</h2>
+      <p>No ambiente digital, agir com rapidez é essencial. A marca é um dos maiores patrimônios de qualquer empresa e a sua exploração indevida compromete diretamente credibilidade, competitividade e faturamento.</p>
+      <p>Se a sua empresa está sendo prejudicada por anúncios patrocinados que utilizam sua marca, por perfis falsos nas redes sociais ou por qualquer forma de uso digital indevido, é possível buscar uma solução judicial imediata para cessar a violação e reparar os danos sofridos.</p>
+    `,
+  },
 };
 
 const ArticleDetail = () => {

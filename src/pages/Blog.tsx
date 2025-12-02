@@ -12,6 +12,7 @@ const Blog = () => {
     "Todos",
     "Registro de Marca",
     "Jurídico",
+    "Judicial",
   ];
 
   const articles = [
@@ -50,6 +51,33 @@ const Blog = () => {
       readTime: "9 min",
       author: "Raffaella Bernardino",
       slug: "como-funciona-processo-registro-marca",
+    },
+    {
+      title: "Como Obter uma Liminar para Impedir Imediatamente o Uso Indevido da Marca",
+      excerpt: "Quando uma empresa se depara com o uso indevido de sua marca por terceiros, a reação precisa ser rápida. A legislação brasileira prevê uma solução eficaz: a tutela de urgência, conhecida como liminar.",
+      category: "Judicial",
+      date: "08 Nov 2024",
+      readTime: "10 min",
+      author: "Dr. Gustavo Rocco",
+      slug: "liminar-uso-indevido-marca",
+    },
+    {
+      title: "Quando é Possível Anular Judicialmente uma Marca Registrada no INPI",
+      excerpt: "Nem sempre o registro de marca concedido pelo INPI está correto. A Ação de Nulidade de Registro de Marca representa um instrumento essencial de proteção empresarial quando o sistema administrativo falha.",
+      category: "Judicial",
+      date: "05 Nov 2024",
+      readTime: "11 min",
+      author: "Dr. Gustavo Rocco",
+      slug: "anular-marca-registrada-inpi",
+    },
+    {
+      title: "Uso Indevido da Marca em Tráfego Pago e Redes Sociais no Ambiente Digital",
+      excerpt: "No ambiente de anúncios patrocinados como Google Ads e redes sociais, o uso indevido de uma marca registrada pode provocar danos imediatos e irreparáveis. Saiba como agir juridicamente.",
+      category: "Judicial",
+      date: "01 Nov 2024",
+      readTime: "12 min",
+      author: "Dr. Gustavo Rocco",
+      slug: "uso-indevido-marca-trafego-pago-redes-sociais",
     },
   ];
 
