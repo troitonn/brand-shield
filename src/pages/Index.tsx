@@ -504,7 +504,7 @@ const Index = () => {
     </p>
     <p className="text-muted-foreground mt-3 leading-relaxed">
       Advogada com atuação no Brasil e em Portugal. Visão jurídica global com foco em marcas,
-      imigração, contratos e compliance. Founder da <strong>BB Advocacia</strong>, pós-graduada
+      imigração, contratos e compliance. Founder da <strong>RBB Advocacia</strong>, pós-graduada
       em Direito Digital e Compliance e em formação de Mestrado em Business em Portugal. Conecta
       proteção legal, expansão de negócios e crescimento corporativo.
     </p>
@@ -526,7 +526,7 @@ const Index = () => {
       />
     </div>
 
-    <h3 className="font-display text-2xl mt-6">Dr. Gustavo Rocco</h3>
+    <h3 className="font-display text-2xl mt-6">Dr. Gustavo Rocco Correa</h3>
     <p className="text-accent font-semibold">Sócio & Co-Founder | Advogado</p>
     <p className="text-muted-foreground mt-3 leading-relaxed">
       Especialista em Processo Civil, Consumidor e Tributário. Co-Founder da
