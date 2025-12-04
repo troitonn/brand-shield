@@ -503,11 +503,9 @@ const Index = () => {
       Sócia & Co-Founder | Advogada Especialista em Propriedade Intelectual
     </p>
     <p className="text-muted-foreground mt-3 leading-relaxed">
-      Advogada com atuação no Brasil e em Portugal, reúne visão jurídica global e foco estratégico em Propriedade Intelectual, Imigração, Contratos e Compliance.
-      Founder da RB Advocacia, é pós-graduada em Direito Digital & Compliance e cursou Mestrado em Business pela Universidade de Coimbra, unindo técnica jurídica, inovação e mentalidade corporativa internacional.
-      Sua atuação se destaca pela capacidade de conectar proteção legal, expansão de negócios e crescimento estratégico, estruturando marcas e empresas com segurança, inteligência e visão de longo prazo.
-      Trabalha de forma integrada, combinando análise jurídica precisa, planejamento estratégico e experiência prática tanto no Brasil quanto na Europa, oferecendo soluções que fortalecem negócios e ampliam sua competitividade no ambiente digital e global.
-    </p>
+      Advogada com atuação no Brasil e em Portugal, possui visão jurídica global com foco em Propriedade Intelectual, Contratos e Compliance.
+      Founder da RB Advocacia, é pós-graduada em Direito Digital & Compliance e cursou Mestrado em Portugal, unindo técnica jurídica, inovação e visão corporativa internacional.
+      Conecta proteção legal, expansão de negócios e crescimento estratégico, atuando na estruturação de marcas e empresas com segurança e inteligência.    </p>
   </motion.div>
 
   {/* GUSTAVO */}
