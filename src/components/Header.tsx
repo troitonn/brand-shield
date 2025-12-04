@@ -106,7 +106,7 @@ const Header = () => {
                   : "none",
               }}
             >
-              <Link to="/contato">Falar com Jurídico</Link>
+              <Link to="/contato">Falar com Especialista</Link>
             </Button>
 
             {/* Registrar Marca – SEM ALTERAR, laranja intacto */}
@@ -160,7 +160,7 @@ const Header = () => {
                     className="rounded-2xl"
                     style={{ color: APPLE_BLUE }}
                   >
-                    <Link to="/contato">Falar com Jurídico</Link>
+                    <Link to="/contato">Falar com Especialista</Link>
                   </Button>
 
                   <Button
